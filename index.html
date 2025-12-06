@@ -22,19 +22,19 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 0 24px 72px;
+      background: #ffffff;
     }
 
     /* ===========================
-       TOP NAVIGATION (EVEN SPACED)
+       TOP NAVIGATION
        =========================== */
     .top-nav {
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid #dcdcdc;
-      height: 78px;
+      background: #1f57a4; /* MTSU style blue */
+      border-bottom: 1px solid #143b6f;
+      height: 72px;
       display: flex;
       align-items: center;
     }
@@ -53,92 +53,66 @@
       justify-content: space-evenly;
       width: 100%;
       max-width: 1100px;
-      font-size: 1.25rem;
-      font-weight: 500;
+      font-size: 1.15rem;
+      font-weight: 600;
       letter-spacing: 0.02em;
     }
 
     .nav-links a {
-      color: #333;
+      color: #ffffff;
       text-decoration: none;
       padding: 6px 12px;
       border-radius: 999px;
     }
 
     .nav-links a:hover {
-      background: #eef2f3;
+      background: rgba(255, 255, 255, 0.16);
     }
 
     /* ===========================
-       HERO SECTION (HOME)
+       HERO HEADER (TOP BLOCK)
        =========================== */
     .hero {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #fdf7ef;           /* soft warm background */
-      padding: 70px 40px;
-      border-radius: 0 0 24px 24px;
-      border-bottom: 1px solid #e2d8c8;
-      margin-bottom: 40px;
+      background: #f1f1f1;
+      padding: 48px 40px 40px;
+      border-bottom: 1px solid #d0d0d0;
     }
 
     .hero-left {
       max-width: 55%;
     }
 
-    .hero h1 {
-      font-size: 3rem;
+    .hero-left h1 {
+      font-size: 2.3rem;
       font-weight: 700;
-      margin-bottom: 12px;
-      color: #2c2c2c;
+      margin: 0 0 28px 0;
+      color: #4a4a4a;
     }
 
-    .highlight-name {
-      color: #1a2a3a;
-    }
-
-    .hero-subline {
-      font-size: 1.4rem;
-      margin-bottom: 8px;
-      color: #333;
-    }
-
-    .hero-badge {
-      display: inline-block;
-      background: #dca776;
-      color: #1a1a1a;
-      padding: 14px 22px;
+    .hero-role {
       font-size: 1.2rem;
-      font-weight: 700;
-      border-radius: 12px;
-      margin-bottom: 24px;
-    }
-
-    .hero-slogan {
-      font-size: 1rem;
       color: #555;
-      margin-bottom: 32px;
-      max-width: 450px;
-      line-height: 1.5;
+      margin: 0 0 8px 0;
+      line-height: 1.4;
     }
 
-    .hero-button {
-      display: inline-block;
-      padding: 14px 28px;
-      border: 2px solid #1a1a1a;
-      background: #e8b485;
-      color: #1a1a1a;
-      font-weight: 600;
-      border-radius: 12px;
-      text-decoration: none;
-      font-size: 1.1rem;
+    .hero-school {
+      font-size: 0.95rem;
+      color: #666;
+      margin-top: 4px;
     }
 
-    .hero-button:hover {
-      background: #d79d68;
+    .mt-logo {
+      margin-top: 18px;
+      max-width: 170px;
+      height: auto;
+      display: block;
     }
 
+    /* photo circle on the right */
     .hero-right {
       display: flex;
       justify-content: center;
@@ -148,18 +122,33 @@
     .photo-placeholder {
       width: 260px;
       height: 260px;
-      background: #698192;
+      background: #cd7f63; /* peach circle */
       border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 1.1rem;
-      font-weight: 500;
     }
 
     /* ===========================
-       SECTIONS
+       SLOGAN BAND (DARK GRAY)
+       =========================== */
+    .motto-band {
+      background: #6b6b6b;
+      color: #ffffff;
+      padding: 40px 40px 46px;
+    }
+
+    .motto-line {
+      margin: 0 0 16px 0;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .motto-strong {
+      font-weight: 700;
+      font-size: 2.3rem;
+    }
+
+    /* ===========================
+       SECTIONS BELOW
        =========================== */
     section {
       background: white;
@@ -237,25 +226,33 @@
     @media (max-width: 900px) {
       .hero {
         flex-direction: column;
-        text-align: center;
-        padding: 50px 24px;
+        align-items: flex-start;
+        padding: 32px 24px 28px;
       }
 
-      .hero-left {
-        max-width: 100%;
-        margin-bottom: 32px;
+      .hero-right {
+        margin-top: 24px;
+        align-self: center;
       }
 
-      .hero-slogan {
-        max-width: none;
+      .motto-band {
+        padding: 28px 24px 32px;
+      }
+
+      .motto-line {
+        font-size: 1.6rem;
+      }
+
+      .motto-strong {
+        font-size: 2rem;
       }
     }
 
     @media (max-width: 700px) {
       .nav-links {
         flex-wrap: wrap;
-        gap: 12px;
-        font-size: 1.1rem;
+        gap: 10px;
+        font-size: 1rem;
       }
 
       section {
@@ -283,37 +280,40 @@
 
   <div class="page">
 
-    <!-- HERO / HOME SECTION -->
+    <!-- HERO HEADER -->
     <header class="hero">
       <div class="hero-left">
-        <h1>Hello! I’m <span class="highlight-name">Alex Ayala</span></h1>
+        <h1>Hello! I’m Alex Ayala</h1>
 
-        <div class="hero-badge">Mechatronics Engineering &amp; MBA Student at MTSU</div>
-
-       <p class="hero-slogan">
-        Designing with ingenuity<br>
-        Communicating with empathy<br>
-        Leading with integrity
+        <p class="hero-role">
+          Mechatronics Engineering &amp; MBA<br>
+          <span class="hero-school">Student at MTSU</span>
         </p>
 
-        <a class="hero-button" href="#projects">View my work</a>
+        <!-- Placeholder logo – replace mt-logo.png with your actual file name later -->
+        <img class="mt-logo" src="mt-logo.png" alt="MTSU logo (placeholder)" />
       </div>
 
       <div class="hero-right">
-        <div class="photo-placeholder">
-          <!-- Replace later with an actual image tag -->
-          <span>Photo</span>
-        </div>
+        <div class="photo-placeholder"></div>
       </div>
     </header>
 
+    <!-- SLOGAN BAND -->
+    <section class="motto-band">
+      <p class="motto-line">Design with <span class="motto-strong">Ingenuity</span></p>
+      <p class="motto-line">Communicate with <span class="motto-strong">Clarity</span></p>
+      <p class="motto-line">Lead with <span class="motto-strong">Integrity</span></p>
+    </section>
+
+    <!-- BELOW THE FOLD SECTIONS -->
     <section id="about">
       <div class="label">About</div>
       <h2>Who I Am</h2>
       <p>
         I am a Mechatronics Engineering and MBA student at Middle Tennessee State University.
-        I specialize in turning unclear real-world problems into structured,
-        testable engineering solutions that blend mechanical design, automation,
+        I focus on turning unclear real world problems into structured,
+        testable engineering solutions that combine mechanical design, automation,
         controls, and business strategy.
       </p>
     </section>
@@ -322,27 +322,27 @@
       <div class="label">Projects</div>
       <h2>Selected Engineering Projects</h2>
       <ul>
-        <li><strong>Solar Scrubber – Autonomous Solar Panel Cleaning Robot</strong><br>
-          Tracked robot with dual-sensor edge detection, hoist system, and brush–spray cleaning module.
+        <li><strong>Solar Scrubber: Autonomous Solar Panel Cleaning Robot</strong><br>
+          Tracked robot with dual sensor edge detection, hoist system, and brush plus spray cleaning module.
         </li>
 
-        <li><strong>FPV Drone Controls &amp; Optimization</strong><br>
-          Custom quadcopter with PID tuning, MATLAB modeling, and 3D-printed frame iterations.
+        <li><strong>FPV Drone Controls and Optimization</strong><br>
+          Custom quadcopter with PID tuning, MATLAB modeling, and 3D printed frame iterations.
         </li>
 
-        <li><strong>PLC &amp; Automation Lab Systems</strong><br>
-          Siemens S7-300 + Festo industrial automation with sensors, actuators, and control sequences.
+        <li><strong>PLC and Automation Lab Systems</strong><br>
+          Siemens S7 300 and Festo industrial automation with sensors, actuators, and control sequences.
         </li>
 
-        <li><strong>CAD &amp; Mechanical Design</strong><br>
-          SolidWorks and Onshape parts and manufacturing-ready assemblies.
+        <li><strong>CAD and Mechanical Design</strong><br>
+          SolidWorks and Onshape parts and manufacturing ready assemblies.
         </li>
       </ul>
     </section>
 
     <section id="experience">
       <div class="label">Experience</div>
-      <h2>Experience &amp; Leadership</h2>
+      <h2>Experience and Leadership</h2>
       <p class="subtle">Expanded details coming soon.</p>
       <ul>
         <li><strong>[Role / Company]</strong> — description coming soon.</li>
@@ -367,7 +367,7 @@
 
     <section id="resume">
       <div class="label">Resume</div>
-      <h2>Resume &amp; Documents</h2>
+      <h2>Resume and Documents</h2>
       <a class="primary-button" href="resume.pdf" target="_blank">Download resume (PDF)</a>
       <p class="subtle">Expanded information is available throughout this site.</p>
     </section>
@@ -383,7 +383,7 @@
       </p>
 
       <p>Email: <a href="mailto:youremail@email.com">youremail@email.com</a></p>
-      <p>Phone: (xxx) xxx-xxxx</p>
+      <p>Phone: (xxx) xxx xxxx</p>
     </section>
 
     <footer>
@@ -394,4 +394,3 @@
 </body>
 
 </html>
-
