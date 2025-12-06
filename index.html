@@ -69,90 +69,98 @@
       background: #eef2f3;
     }
 
-    /* HEADER */
-    header {
-      text-align: center;
-      padding: 60px 20px 50px;
-      background: white;
-      border-bottom: 1px solid #e6e6e6;
+    /* ===========================
+       HERO SECTION (HOME)
+       =========================== */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fdf7ef;           /* soft warm background */
+      padding: 70px 40px;
       border-radius: 0 0 24px 24px;
-      margin-bottom: 28px;
+      border-bottom: 1px solid #e2d8c8;
+      margin-bottom: 40px;
     }
 
-    h1 {
-      font-size: 2.8rem;
+    .hero-left {
+      max-width: 55%;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #2c2c2c;
+    }
+
+    .highlight-name {
+      color: #1a2a3a;
+    }
+
+    .hero-subline {
+      font-size: 1.4rem;
       margin-bottom: 8px;
-      font-weight: 600;
+      color: #333;
     }
 
-    .tagline {
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 20px;
+    .hero-badge {
+      display: inline-block;
+      background: #dca776;
+      color: #1a1a1a;
+      padding: 14px 22px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 12px;
+      margin-bottom: 24px;
     }
 
-    .pill-row {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    .pill {
-      padding: 8px 14px;
-      background: #eef2f3;
-      border-radius: 1000px;
-      border: 1px solid #d3dbe0;
-      font-size: 0.85rem;
-      color: #444;
-    }
-
-    /* QUICK LINKS / HERO CARDS */
-    .hero-quick-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      justify-content: center;
-      margin-top: 28px;
-    }
-
-    .hero-card-link {
-      display: block;
-      min-width: 190px;
-      max-width: 240px;
-      padding: 14px 18px;
-      border-radius: 16px;
-      border: 1px solid #d8dfe5;
-      background: #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-      text-align: left;
-      text-decoration: none;
-    }
-
-    .hero-card-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #005bbb;
-      margin-bottom: 4px;
-    }
-
-    .hero-card-subtitle {
-      font-size: 0.85rem;
+    .hero-slogan {
+      font-size: 1rem;
       color: #555;
+      margin-bottom: 32px;
+      max-width: 450px;
+      line-height: 1.5;
     }
 
-    .hero-footer-links {
-      margin-top: 18px;
-      font-size: 0.9rem;
-      color: #666;
+    .hero-button {
+      display: inline-block;
+      padding: 14px 28px;
+      border: 2px solid #1a1a1a;
+      background: #e8b485;
+      color: #1a1a1a;
+      font-weight: 600;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.1rem;
     }
 
-    .hero-footer-links a {
+    .hero-button:hover {
+      background: #d79d68;
+    }
+
+    .hero-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .photo-placeholder {
+      width: 260px;
+      height: 260px;
+      background: #698192;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.1rem;
       font-weight: 500;
     }
 
-    /* SECTIONS */
+    /* ===========================
+       SECTIONS
+       =========================== */
     section {
       background: white;
       padding: 28px 24px;
@@ -205,6 +213,20 @@
       text-decoration: underline;
     }
 
+    .primary-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #005bbb;
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .primary-button:hover {
+      background: #004799;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -212,15 +234,28 @@
       color: #777;
     }
 
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 24px;
+      }
+
+      .hero-left {
+        max-width: 100%;
+        margin-bottom: 32px;
+      }
+
+      .hero-slogan {
+        max-width: none;
+      }
+    }
+
     @media (max-width: 700px) {
       .nav-links {
         flex-wrap: wrap;
         gap: 12px;
         font-size: 1.1rem;
-      }
-
-      header {
-        padding-inline: 16px;
       }
 
       section {
@@ -248,35 +283,27 @@
 
   <div class="page">
 
-    <header>
-      <h1>Alex Ayala</h1>
-      <p class="tagline">Mechatronics Engineering and MBA Student at MTSU</p>
+    <!-- HERO / HOME SECTION -->
+    <header class="hero">
+      <div class="hero-left">
+        <h1>Hello, I’m <span class="highlight-name">Alex Ayala</span></h1>
 
-      <div class="pill-row">
-        <div class="pill">Designing with ingenuity</div>
-        <div class="pill">Communicating with empathy</div>
-        <div class="pill">Leading with integrity</div>
+        <p class="hero-subline">I’m a</p>
+
+        <div class="hero-badge">MECHATRONICS ENGINEERING &amp; MBA STUDENT AT MTSU</div>
+
+        <p class="hero-slogan">
+          Designing with ingenuity. Communicating with empathy. Leading with integrity.
+        </p>
+
+        <a class="hero-button" href="#projects">View my work</a>
       </div>
 
-      <div class="hero-quick-links">
-        <a class="hero-card-link" href="#projects">
-          <div class="hero-card-title">View Projects</div>
-          <div class="hero-card-subtitle">Solar Scrubber, FPV drone, PLC automation, and more.</div>
-        </a>
-
-        <a class="hero-card-link" href="resume.pdf" target="_blank">
-          <div class="hero-card-title">Resume (PDF)</div>
-          <div class="hero-card-subtitle">One-page resume, ready to download.</div>
-        </a>
-
-        <a class="hero-card-link" href="#recruiters">
-          <div class="hero-card-title">For Recruiters</div>
-          <div class="hero-card-subtitle">Roles, availability, and what I bring.</div>
-        </a>
-      </div>
-
-      <div class="hero-footer-links">
-        Or just <a href="#contact">reach out</a> — always happy to connect.
+      <div class="hero-right">
+        <div class="photo-placeholder">
+          <!-- Replace later with an actual image tag -->
+          <span>Photo</span>
+        </div>
       </div>
     </header>
 
@@ -286,7 +313,7 @@
       <p>
         I am a Mechatronics Engineering and MBA student at Middle Tennessee State University.
         I specialize in turning unclear real-world problems into structured,
-        testable engineering solutions blending mechanical design, automation,
+        testable engineering solutions that blend mechanical design, automation,
         controls, and business strategy.
       </p>
     </section>
@@ -299,23 +326,23 @@
           Tracked robot with dual-sensor edge detection, hoist system, and brush–spray cleaning module.
         </li>
 
-        <li><strong>FPV Drone Controls & Optimization</strong><br>
+        <li><strong>FPV Drone Controls &amp; Optimization</strong><br>
           Custom quadcopter with PID tuning, MATLAB modeling, and 3D-printed frame iterations.
         </li>
 
-        <li><strong>PLC & Automation Lab Systems</strong><br>
+        <li><strong>PLC &amp; Automation Lab Systems</strong><br>
           Siemens S7-300 + Festo industrial automation with sensors, actuators, and control sequences.
         </li>
 
-        <li><strong>CAD & Mechanical Design</strong><br>
-          SolidWorks / Onshape parts and manufacturing-ready assemblies.
+        <li><strong>CAD &amp; Mechanical Design</strong><br>
+          SolidWorks and Onshape parts and manufacturing-ready assemblies.
         </li>
       </ul>
     </section>
 
     <section id="experience">
       <div class="label">Experience</div>
-      <h2>Experience & Leadership</h2>
+      <h2>Experience &amp; Leadership</h2>
       <p class="subtle">Expanded details coming soon.</p>
       <ul>
         <li><strong>[Role / Company]</strong> — description coming soon.</li>
@@ -335,14 +362,14 @@
         Technical strengths include CAD, controls, MATLAB, PLC automation,
         and multidisciplinary project leadership through the MBA Lightning Track.
       </p>
-      <p>Based in Tennessee — open to relocation.</p>
+      <p>Based in Tennessee and open to relocation.</p>
     </section>
 
     <section id="resume">
       <div class="label">Resume</div>
-      <h2>Resume & Documents</h2>
+      <h2>Resume &amp; Documents</h2>
       <a class="primary-button" href="resume.pdf" target="_blank">Download resume (PDF)</a>
-      <p class="subtle">Expanded version available throughout this site.</p>
+      <p class="subtle">Expanded information is available throughout this site.</p>
     </section>
 
     <section id="contact">
@@ -365,4 +392,6 @@
 
   </div>
 </body>
+
 </html>
+
