@@ -24,7 +24,9 @@
       padding: 0 24px 72px;
     }
 
-    /* TOP NAVIGATION */
+    /* ===========================
+       TOP NAVIGATION (EVEN SPACED)
+       =========================== */
     .top-nav {
       position: sticky;
       top: 0;
@@ -38,33 +40,19 @@
     }
 
     .top-nav-inner {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
       width: 100%;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       padding: 0 32px;
-    }
-
-    /* NEW HOME LINK — MATCHES NAV LINKS */
-    .nav-home-link {
-      font-size: 1.25rem;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      color: #333;
-      text-decoration: none;
-      padding: 6px 10px;
-      border-radius: 999px;
-    }
-
-    .nav-home-link:hover {
-      background: #eef2f3;
     }
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      justify-content: space-evenly;
+      width: 100%;
+      max-width: 1100px;
       font-size: 1.25rem;
       font-weight: 500;
       letter-spacing: 0.02em;
@@ -73,7 +61,7 @@
     .nav-links a {
       color: #333;
       text-decoration: none;
-      padding: 6px 10px;
+      padding: 6px 12px;
       border-radius: 999px;
     }
 
@@ -120,7 +108,7 @@
       color: #444;
     }
 
-    /* QUICK LINKS */
+    /* QUICK LINKS / HERO CARDS */
     .hero-quick-links {
       display: flex;
       flex-wrap: wrap;
@@ -164,7 +152,7 @@
       font-weight: 500;
     }
 
-    /* SECTION STYLING */
+    /* SECTIONS */
     section {
       background: white;
       padding: 28px 24px;
@@ -196,7 +184,7 @@
 
     ul {
       padding-left: 20px;
-      margin: 8px 0 0 0;
+      margin: 8px 0;
     }
 
     li {
@@ -225,12 +213,8 @@
     }
 
     @media (max-width: 700px) {
-      .top-nav-inner {
-        padding-inline: 16px;
-      }
-
       .nav-links {
-        justify-content: flex-start;
+        flex-wrap: wrap;
         gap: 12px;
         font-size: 1.1rem;
       }
@@ -247,13 +231,11 @@
 </head>
 
 <body>
+
   <div class="top-nav">
     <div class="top-nav-inner">
-
-      <!-- NEW HOME LINK -->
-      <a href="/Portfolio/" class="nav-home-link">Home</a>
-
       <div class="nav-links">
+        <a href="/Portfolio/">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -303,9 +285,9 @@
       <h2>Who I Am</h2>
       <p>
         I am a Mechatronics Engineering and MBA student at Middle Tennessee State University.
-        I specialize in taking unclear real-world problems and turning them into structured,
-        testable engineering solutions. My work blends mechanical design, automation, controls,
-        and business strategy.
+        I specialize in turning unclear real-world problems into structured,
+        testable engineering solutions blending mechanical design, automation,
+        controls, and business strategy.
       </p>
     </section>
 
@@ -313,34 +295,32 @@
       <div class="label">Projects</div>
       <h2>Selected Engineering Projects</h2>
       <ul>
-        <li><strong>Solar Scrubber – Autonomous Solar Panel Cleaning Robot</strong><br />
-          Tracked robot with dual-sensor edge detection, hoist safety, and brush–spray cleaning system.
+        <li><strong>Solar Scrubber – Autonomous Solar Panel Cleaning Robot</strong><br>
+          Tracked robot with dual-sensor edge detection, hoist system, and brush–spray cleaning module.
         </li>
 
-        <li><strong>FPV Drone Controls & Optimization</strong><br />
-          Custom quadcopter with PID tuning, MATLAB-based control modeling, and 3D-printed frames.
+        <li><strong>FPV Drone Controls & Optimization</strong><br>
+          Custom quadcopter with PID tuning, MATLAB modeling, and 3D-printed frame iterations.
         </li>
 
-        <li><strong>PLC & Automation Labs</strong><br />
-          Siemens S7-300 + Festo lab automation sequences, sensors, actuators, and ladder logic.
+        <li><strong>PLC & Automation Lab Systems</strong><br>
+          Siemens S7-300 + Festo industrial automation with sensors, actuators, and control sequences.
         </li>
 
-        <li><strong>CAD & Mechanical Design</strong><br />
-          SolidWorks / Onshape parts for manufacturing and rapid prototyping, including assemblies and fixtures.
+        <li><strong>CAD & Mechanical Design</strong><br>
+          SolidWorks / Onshape parts and manufacturing-ready assemblies.
         </li>
       </ul>
-
-      <p class="subtle">Full write-ups with photos coming soon.</p>
     </section>
 
     <section id="experience">
       <div class="label">Experience</div>
       <h2>Experience & Leadership</h2>
-      <p class="subtle">Expanded context for my engineering and leadership roles.</p>
+      <p class="subtle">Expanded details coming soon.</p>
       <ul>
-        <li><strong>[Role / Company]</strong><br />Detailed description coming soon.</li>
-        <li><strong>[Leadership Experience]</strong><br />More detail coming soon.</li>
-        <li><strong>[Other Relevant Work]</strong><br />To be added.</li>
+        <li><strong>[Role / Company]</strong> — description coming soon.</li>
+        <li><strong>[Leadership Experience]</strong> — description coming soon.</li>
+        <li><strong>[Other Relevant Work]</strong> — description coming soon.</li>
       </ul>
     </section>
 
@@ -348,30 +328,28 @@
       <div class="label">For Recruiters</div>
       <h2>What I’m Looking For</h2>
       <p>
-        I am seeking engineering internship opportunities beginning in 2026 involving mechatronics,
-        robotics, controls, product development, or systems engineering.
+        Seeking engineering internship opportunities starting 2026 in mechatronics,
+        robotics, controls, or product development.
       </p>
       <p>
-        I bring technical strength (controls, CAD, MATLAB, automation, PLCs)
-        and communication/leadership ability through the MTSU MBA Lightning Track.
+        Technical strengths include CAD, controls, MATLAB, PLC automation,
+        and multidisciplinary project leadership through the MBA Lightning Track.
       </p>
-      <p>
-        I am based in Tennessee and open to relocation across the U.S.
-      </p>
+      <p>Based in Tennessee — open to relocation.</p>
     </section>
 
     <section id="resume">
       <div class="label">Resume</div>
       <h2>Resume & Documents</h2>
       <a class="primary-button" href="resume.pdf" target="_blank">Download resume (PDF)</a>
-      <p class="subtle">This site includes an expanded overview of my work.</p>
+      <p class="subtle">Expanded version available throughout this site.</p>
     </section>
 
     <section id="contact">
       <div class="label">Contact</div>
       <h2>Say Hello</h2>
       <p>
-        LinkedIn:<br />
+        LinkedIn:<br>
         <a href="https://www.linkedin.com/in/alexayalaengineer" target="_blank">
           linkedin.com/in/alexayalaengineer
         </a>
