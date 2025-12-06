@@ -23,45 +23,48 @@
       padding: 0 24px 72px;
     }
 
-    /* TOP NAVIGATION */
+    /* TOP NAVIGATION – UPDATED */
     .top-nav {
       position: sticky;
       top: 0;
       z-index: 10;
       background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #e2e2e2;
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #dcdcdc;
+      height: 78px;
+      display: flex;
+      align-items: center;
     }
 
     .top-nav-inner {
       max-width: 1000px;
       margin: 0 auto;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 24px;
+      padding: 0 32px;
     }
 
     .nav-brand {
-      font-weight: 600;
-      font-size: 1rem;
-      letter-spacing: 0.08em;
+      font-weight: 700;
+      font-size: 1.3rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #005bbb;
     }
 
     .nav-links {
       display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      font-size: 0.9rem;
+      gap: 22px;
+      font-size: 1rem;
+      font-weight: 500;
     }
 
     .nav-links a {
-      color: #444;
+      color: #333;
       text-decoration: none;
-      padding: 4px 6px;
+      padding: 6px 10px;
       border-radius: 999px;
     }
 
@@ -145,7 +148,7 @@
     h2 {
       margin: 0 0 14px 0;
       font-size: 1.4rem;
-      color: #005bbb; /* clean engineering blue */
+      color: #005bbb;
     }
 
     p, li {
@@ -211,7 +214,6 @@
       <div class="nav-brand">ALEX AYALA</div>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#now">Now</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#recruiters">For Recruiters</a>
@@ -233,7 +235,6 @@
         <div class="pill">Leading with integrity</div>
       </div>
 
-      <!-- This will work once you add resume.pdf to the repo -->
       <a class="primary-button" href="resume.pdf" target="_blank">
         Download resume (PDF)
       </a>
@@ -245,28 +246,105 @@
       <h2>Who I Am</h2>
       <p>
         I am a Mechatronics Engineering and MBA student at Middle Tennessee State University.
-        I specialize in turning messy real-world problems into clear, testable engineering solutions.
-        My work blends mechanical design, automation, controls, and business strategy.
+        I specialize in taking unclear real-world problems and turning them into structured,
+        testable engineering solutions. My work blends mechanical design, automation,
+        controls, and business strategy.
       </p>
     </section>
 
-    <!-- NOW -->
+    <!-- NOW (NOT IN MENU, STILL ON PAGE) -->
     <section id="now">
       <div class="label">Now</div>
       <h2>What I’m Focused On</h2>
       <ul>
         <li>Leading the Solar Scrubber senior design robot project as project manager.</li>
         <li>Developing controls, PID tuning, and testing workflows for a custom FPV drone platform.</li>
-        <li>Progressing through the MTSU MBA Lightning Track to better connect engineering and business.</li>
-        <li>Building a portfolio that showcases both technical depth and strong communication skills.</li>
+        <li>Progressing through the MTSU MBA Lightning Track to integrate engineering with business.</li>
+        <li>Building this portfolio to showcase both technical depth and communication skills.</li>
       </ul>
-      <p class="subtle">
-        This “Now” section is a snapshot of where my time and energy are going currently.
-      </p>
+      <p class="subtle">This section is a snapshot of what I’m currently putting my energy into.</p>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
       <div class="label">Projects</div>
       <h2>Selected Engineering Projects</h2>
-      <ul
+      <ul>
+        <li>
+          <strong>Solar Scrubber – Autonomous Solar Panel Cleaning Robot</strong><br />
+          Tracked robot with dual-sensor edge detection, hoist safety system, and spray-and-brush cleaning.
+        </li>
+        <li>
+          <strong>FPV Drone Controls & Optimization</strong><br />
+          Custom quadcopter with 3D-printed frames, tuned PID loops, and MATLAB-based control experiments.
+        </li>
+        <li>
+          <strong>PLC & Automation Labs</strong><br />
+          Programming Siemens PLCs and Festo stations for industrial automation sequences.
+        </li>
+        <li>
+          <strong>CAD & Design Work</strong><br />
+          Mechanical components modeled in SolidWorks and Onshape, designed for manufacturing and 3D printing.
+        </li>
+      </ul>
+      <p class="subtle">More detailed write-ups and images coming soon.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="label">Experience</div>
+      <h2>Experience & Leadership</h2>
+      <p class="subtle">This section provides a deeper look at roles beyond the one-page resume.</p>
+      <ul>
+        <li><strong>[Role / Company]</strong><br />Detailed description coming soon.</li>
+        <li><strong>[Leadership / Teaching Experience]</strong><br />More detail coming soon.</li>
+        <li><strong>[Other Relevant Work]</strong><br />To be added.</li>
+      </ul>
+    </section>
+
+    <!-- FOR RECRUITERS -->
+    <section id="recruiters">
+      <div class="label">For Recruiters</div>
+      <h2>What I’m Looking For</h2>
+      <p>
+        I am seeking engineering internship opportunities beginning in 2026 involving mechatronics,
+        robotics, controls, product development, or systems engineering.
+      </p>
+      <p>
+        I bring technical strength (controls, CAD, automation, MATLAB, PLCs) alongside communication
+        and leadership skills through the MTSU MBA Lightning Track.
+      </p>
+      <p>I am based in Tennessee and open to relocation across the U.S.</p>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <div class="label">Resume</div>
+      <h2>Resume & Documents</h2>
+      <a class="primary-button" href="resume.pdf" target="_blank">Download resume (PDF)</a>
+      <p class="subtle">
+        The sections above act as an expanded view with additional context.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="label">Contact</div>
+      <h2>Say Hello</h2>
+      <p>
+        LinkedIn:<br />
+        <a href="https://www.linkedin.com/in/alexayalaengineer" target="_blank">
+          linkedin.com/in/alexayalaengineer
+        </a>
+      </p>
+      <p>Email: <a href="mailto:youremail@email.com">youremail@email.com</a></p>
+      <p>Phone: (xxx) xxx-xxxx</p>
+    </section>
+
+    <footer>
+      Built by Alex Ayala · Hosted on GitHub Pages
+    </footer>
+
+  </div>
+</body>
+</html>
