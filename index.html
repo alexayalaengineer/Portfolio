@@ -52,6 +52,11 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #005bbb;
+      text-decoration: none;   /* keep it clean, no underline */
+    }
+
+    .nav-brand:hover {
+      opacity: 0.75;           /* subtle hover effect */
     }
 
     .nav-links {
@@ -211,7 +216,8 @@
 <body>
   <div class="top-nav">
     <div class="top-nav-inner">
-      <div class="nav-brand">ALEX AYALA</div>
+      <!-- Brand now links to home -->
+      <a href="/Portfolio/" class="nav-brand">ALEX AYALA</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -275,15 +281,15 @@
           Tracked robot with dual-sensor edge detection, hoist safety system, and spray-and-brush cleaning.
         </li>
         <li>
-          <strong>FPV Drone Controls & Optimization</strong><br />
+          <strong>FPV Drone Controls &amp; Optimization</strong><br />
           Custom quadcopter with 3D-printed frames, tuned PID loops, and MATLAB-based control experiments.
         </li>
         <li>
-          <strong>PLC & Automation Labs</strong><br />
+          <strong>PLC &amp; Automation Labs</strong><br />
           Programming Siemens PLCs and Festo stations for industrial automation sequences.
         </li>
         <li>
-          <strong>CAD & Design Work</strong><br />
+          <strong>CAD &amp; Design Work</strong><br />
           Mechanical components modeled in SolidWorks and Onshape, designed for manufacturing and 3D printing.
         </li>
       </ul>
@@ -293,7 +299,7 @@
     <!-- EXPERIENCE -->
     <section id="experience">
       <div class="label">Experience</div>
-      <h2>Experience & Leadership</h2>
+      <h2>Experience &amp; Leadership</h2>
       <p class="subtle">This section provides a deeper look at roles beyond the one-page resume.</p>
       <ul>
         <li><strong>[Role / Company]</strong><br />Detailed description coming soon.</li>
@@ -320,7 +326,7 @@
     <!-- RESUME -->
     <section id="resume">
       <div class="label">Resume</div>
-      <h2>Resume & Documents</h2>
+      <h2>Resume &amp; Documents</h2>
       <a class="primary-button" href="resume.pdf" target="_blank">Download resume (PDF)</a>
       <p class="subtle">
         The sections above act as an expanded view with additional context.
