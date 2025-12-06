@@ -38,7 +38,9 @@
       text-decoration: underline;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -109,7 +111,7 @@
       justify-content: space-between;
       align-items: center;
       background: var(--card-bg);
-      padding: 40px;
+      padding: 60px 40px;          /* taller card */
       margin-top: 32px;
       border-radius: 24px;
       box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
@@ -120,15 +122,15 @@
       max-width: 55%;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 10px;                    /* more vertical breathing room */
     }
 
     /* HUGE Hello! */
     .hero-hello {
       font-size: 5rem;
       font-weight: 800;
-      margin: 0;
-      line-height: 1;
+      margin: 0 0 4px 0;
+      line-height: 1.02;
     }
 
     /* I'm small + Name big */
@@ -137,6 +139,7 @@
       display: flex;
       align-items: baseline;
       gap: 0.5rem;
+      line-height: 1.2;
     }
 
     .hero-im {
@@ -149,13 +152,13 @@
       font-weight: 800;
     }
 
-    /* Major + small & + MBA big */
+    /* Mechatronics Engineering & */
     .hero-role {
-      margin-top: 6px;
-      margin-bottom: 0;
+      margin: 8px 0 0 0;
       display: flex;
       align-items: baseline;
       gap: 0.4rem;
+      line-height: 1.2;
     }
 
     .hero-major {
@@ -170,7 +173,12 @@
       color: var(--text-muted);
     }
 
-    /* UPDATED: MBA matches Mechatronics Engineering */
+    /* MBA on its own line, same size as Mechatronics Engineering */
+    .hero-mba-line {
+      margin: 4px 0 0 0;
+      line-height: 1.2;
+    }
+
     .hero-mba {
       font-size: 2rem;
       font-weight: 600;
@@ -180,25 +188,25 @@
     /* Student at MTSU + logo + buttons */
     .hero-school-row {
       display: flex;
-      align-items: flex-start;
+      align-items: flex-end;       /* align bottoms: logo bottom = buttons bottom */
       gap: 18px;
-      margin-top: 14px;
+      margin-top: 18px;
     }
 
     .hero-school-and-buttons {
       display: flex;
       flex-direction: column;
+      gap: 10px;
     }
 
     .hero-school {
       font-size: 1.8rem;
       font-weight: 600;
       margin: 0;
-      line-height: 1.1;
+      line-height: 1.25;
     }
 
     .hero-buttons {
-      margin-top: 12px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -223,7 +231,9 @@
       box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
     }
 
-    .resume-button:hover { background: #a72d20; }
+    .resume-button:hover {
+      background: #a72d20;
+    }
 
     .projects-button {
       background: transparent;
@@ -238,7 +248,7 @@
 
     /* Big MTSU logo */
     .mt-logo-hero {
-      max-height: 160px;
+      max-height: 170px;
       width: auto;
       filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.3));
     }
@@ -265,7 +275,6 @@
       border-radius: 24px;
       box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
     }
-
   </style>
 </head>
 
@@ -289,7 +298,6 @@
     <!-- HERO -->
     <header class="hero">
       <div class="hero-left">
-
         <p class="hero-hello">Hello!</p>
 
         <p class="hero-intro">
@@ -300,6 +308,9 @@
         <p class="hero-role">
           <span class="hero-major">Mechatronics Engineering</span>
           <span class="hero-and">&amp;</span>
+        </p>
+
+        <p class="hero-mba-line">
           <span class="hero-mba">MBA</span>
         </p>
 
@@ -319,7 +330,6 @@
             class="mt-logo-hero"
           />
         </div>
-
       </div>
 
       <div class="hero-right">
@@ -343,10 +353,12 @@
   <script>
     window.addEventListener("scroll", function () {
       const nav = document.querySelector(".top-nav");
-      if (window.scrollY > 10) nav.classList.add("scrolled");
-      else nav.classList.remove("scrolled");
+      if (window.scrollY > 10) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
     });
   </script>
 </body>
 </html>
-
