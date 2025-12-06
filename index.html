@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +24,7 @@
       padding: 0 24px 72px;
     }
 
-    /* TOP NAVIGATION – OPTION B FONT SIZE */
+    /* TOP NAVIGATION */
     .top-nav {
       position: sticky;
       top: 0;
@@ -46,17 +47,19 @@
       padding: 0 32px;
     }
 
-    .nav-brand {
-      font-weight: 700;
-      font-size: 1.75rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #005bbb;
+    /* NEW HOME LINK — MATCHES NAV LINKS */
+    .nav-home-link {
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #333;
       text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 999px;
     }
 
-    .nav-brand:hover {
-      opacity: 0.75;
+    .nav-home-link:hover {
+      background: #eef2f3;
     }
 
     .nav-links {
@@ -78,7 +81,7 @@
       background: #eef2f3;
     }
 
-    /* HEADER HERO */
+    /* HEADER */
     header {
       text-align: center;
       padding: 60px 20px 50px;
@@ -117,7 +120,7 @@
       color: #444;
     }
 
-    /* HERO QUICK LINKS */
+    /* QUICK LINKS */
     .hero-quick-links {
       display: flex;
       flex-wrap: wrap;
@@ -161,7 +164,7 @@
       font-weight: 500;
     }
 
-    /* SECTION CARDS */
+    /* SECTION STYLING */
     section {
       background: white;
       padding: 28px 24px;
@@ -184,7 +187,8 @@
       color: #005bbb;
     }
 
-    p, li {
+    p,
+    li {
       font-size: 1rem;
       line-height: 1.6;
       color: #333;
@@ -245,7 +249,10 @@
 <body>
   <div class="top-nav">
     <div class="top-nav-inner">
-      <a href="/Portfolio/" class="nav-brand">ALEX AYALA</a>
+
+      <!-- NEW HOME LINK -->
+      <a href="/Portfolio/" class="nav-home-link">Home</a>
+
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -269,27 +276,20 @@
         <div class="pill">Leading with integrity</div>
       </div>
 
-      <!-- HOMEPAGE QUICK LINKS -->
       <div class="hero-quick-links">
         <a class="hero-card-link" href="#projects">
           <div class="hero-card-title">View Projects</div>
-          <div class="hero-card-subtitle">
-            Solar Scrubber, FPV drone, PLC automation, and more.
-          </div>
+          <div class="hero-card-subtitle">Solar Scrubber, FPV drone, PLC automation, and more.</div>
         </a>
 
         <a class="hero-card-link" href="resume.pdf" target="_blank">
           <div class="hero-card-title">Resume (PDF)</div>
-          <div class="hero-card-subtitle">
-            One-page resume, ready to download.
-          </div>
+          <div class="hero-card-subtitle">One-page resume, ready to download.</div>
         </a>
 
         <a class="hero-card-link" href="#recruiters">
           <div class="hero-card-title">For Recruiters</div>
-          <div class="hero-card-subtitle">
-            Roles, availability, and what I bring.
-          </div>
+          <div class="hero-card-subtitle">Roles, availability, and what I bring.</div>
         </a>
       </div>
 
@@ -298,44 +298,41 @@
       </div>
     </header>
 
-    <!-- ABOUT -->
     <section id="about">
       <div class="label">About</div>
       <h2>Who I Am</h2>
       <p>
         I am a Mechatronics Engineering and MBA student at Middle Tennessee State University.
         I specialize in taking unclear real-world problems and turning them into structured,
-        testable engineering solutions. My work blends mechanical design, automation,
-        controls, and business strategy.
+        testable engineering solutions. My work blends mechanical design, automation, controls,
+        and business strategy.
       </p>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects">
       <div class="label">Projects</div>
       <h2>Selected Engineering Projects</h2>
       <ul>
-        <li>
-          <strong>Solar Scrubber – Autonomous Solar Panel Cleaning Robot</strong><br />
+        <li><strong>Solar Scrubber – Autonomous Solar Panel Cleaning Robot</strong><br />
           Tracked robot with dual-sensor edge detection, hoist safety, and brush–spray cleaning system.
         </li>
-        <li>
-          <strong>FPV Drone Controls & Optimization</strong><br />
+
+        <li><strong>FPV Drone Controls & Optimization</strong><br />
           Custom quadcopter with PID tuning, MATLAB-based control modeling, and 3D-printed frames.
         </li>
-        <li>
-          <strong>PLC & Automation Labs</strong><br />
+
+        <li><strong>PLC & Automation Labs</strong><br />
           Siemens S7-300 + Festo lab automation sequences, sensors, actuators, and ladder logic.
         </li>
-        <li>
-          <strong>CAD & Mechanical Design</strong><br />
+
+        <li><strong>CAD & Mechanical Design</strong><br />
           SolidWorks / Onshape parts for manufacturing and rapid prototyping, including assemblies and fixtures.
         </li>
       </ul>
+
       <p class="subtle">Full write-ups with photos coming soon.</p>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience">
       <div class="label">Experience</div>
       <h2>Experience & Leadership</h2>
@@ -347,7 +344,6 @@
       </ul>
     </section>
 
-    <!-- FOR RECRUITERS -->
     <section id="recruiters">
       <div class="label">For Recruiters</div>
       <h2>What I’m Looking For</h2>
@@ -359,10 +355,11 @@
         I bring technical strength (controls, CAD, MATLAB, automation, PLCs)
         and communication/leadership ability through the MTSU MBA Lightning Track.
       </p>
-      <p>I am based in Tennessee and open to relocation across the U.S.</p>
+      <p>
+        I am based in Tennessee and open to relocation across the U.S.
+      </p>
     </section>
 
-    <!-- RESUME -->
     <section id="resume">
       <div class="label">Resume</div>
       <h2>Resume & Documents</h2>
@@ -370,7 +367,6 @@
       <p class="subtle">This site includes an expanded overview of my work.</p>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <div class="label">Contact</div>
       <h2>Say Hello</h2>
@@ -380,6 +376,7 @@
           linkedin.com/in/alexayalaengineer
         </a>
       </p>
+
       <p>Email: <a href="mailto:youremail@email.com">youremail@email.com</a></p>
       <p>Phone: (xxx) xxx-xxxx</p>
     </section>
