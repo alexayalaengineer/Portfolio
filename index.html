@@ -23,7 +23,7 @@
       padding: 0 24px 72px;
     }
 
-    /* TOP NAVIGATION – UPDATED */
+    /* TOP NAVIGATION – OPTION B FONT SIZE */
     .top-nav {
       position: sticky;
       top: 0;
@@ -48,22 +48,23 @@
 
     .nav-brand {
       font-weight: 700;
-      font-size: 1.3rem;
-      letter-spacing: 0.12em;
+      font-size: 1.75rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: #005bbb;
-      text-decoration: none;   /* keep it clean, no underline */
+      text-decoration: none;
     }
 
     .nav-brand:hover {
-      opacity: 0.75;           /* subtle hover effect */
+      opacity: 0.75;
     }
 
     .nav-links {
       display: flex;
-      gap: 22px;
-      font-size: 1rem;
+      gap: 28px;
+      font-size: 1.25rem;
       font-weight: 500;
+      letter-spacing: 0.02em;
     }
 
     .nav-links a {
@@ -77,7 +78,7 @@
       background: #eef2f3;
     }
 
-    /* HEADER */
+    /* HEADER HERO */
     header {
       text-align: center;
       padding: 60px 20px 50px;
@@ -116,21 +117,48 @@
       color: #444;
     }
 
-    .primary-button {
-      display: inline-block;
-      margin-top: 22px;
-      padding: 10px 18px;
-      border-radius: 999px;
-      border: none;
-      background: #005bbb;
-      color: white;
-      font-size: 0.95rem;
-      cursor: pointer;
+    /* HERO QUICK LINKS */
+    .hero-quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 28px;
+    }
+
+    .hero-card-link {
+      display: block;
+      min-width: 190px;
+      max-width: 240px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      border: 1px solid #d8dfe5;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+      text-align: left;
       text-decoration: none;
     }
 
-    .primary-button:hover {
-      background: #004799;
+    .hero-card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #005bbb;
+      margin-bottom: 4px;
+    }
+
+    .hero-card-subtitle {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .hero-footer-links {
+      margin-top: 18px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .hero-footer-links a {
+      font-weight: 500;
     }
 
     /* SECTION CARDS */
@@ -199,7 +227,8 @@
 
       .nav-links {
         justify-content: flex-start;
-        gap: 10px;
+        gap: 12px;
+        font-size: 1.1rem;
       }
 
       header {
@@ -216,7 +245,6 @@
 <body>
   <div class="top-nav">
     <div class="top-nav-inner">
-      <!-- Brand now links to home -->
       <a href="/Portfolio/" class="nav-brand">ALEX AYALA</a>
       <div class="nav-links">
         <a href="#about">About</a>
@@ -241,9 +269,33 @@
         <div class="pill">Leading with integrity</div>
       </div>
 
-      <a class="primary-button" href="resume.pdf" target="_blank">
-        Download resume (PDF)
-      </a>
+      <!-- HOMEPAGE QUICK LINKS -->
+      <div class="hero-quick-links">
+        <a class="hero-card-link" href="#projects">
+          <div class="hero-card-title">View Projects</div>
+          <div class="hero-card-subtitle">
+            Solar Scrubber, FPV drone, PLC automation, and more.
+          </div>
+        </a>
+
+        <a class="hero-card-link" href="resume.pdf" target="_blank">
+          <div class="hero-card-title">Resume (PDF)</div>
+          <div class="hero-card-subtitle">
+            One-page resume, ready to download.
+          </div>
+        </a>
+
+        <a class="hero-card-link" href="#recruiters">
+          <div class="hero-card-title">For Recruiters</div>
+          <div class="hero-card-subtitle">
+            Roles, availability, and what I bring.
+          </div>
+        </a>
+      </div>
+
+      <div class="hero-footer-links">
+        Or just <a href="#contact">reach out</a> — always happy to connect.
+      </div>
     </header>
 
     <!-- ABOUT -->
@@ -258,19 +310,6 @@
       </p>
     </section>
 
-    <!-- NOW (NOT IN MENU, STILL ON PAGE) -->
-    <section id="now">
-      <div class="label">Now</div>
-      <h2>What I’m Focused On</h2>
-      <ul>
-        <li>Leading the Solar Scrubber senior design robot project as project manager.</li>
-        <li>Developing controls, PID tuning, and testing workflows for a custom FPV drone platform.</li>
-        <li>Progressing through the MTSU MBA Lightning Track to integrate engineering with business.</li>
-        <li>Building this portfolio to showcase both technical depth and communication skills.</li>
-      </ul>
-      <p class="subtle">This section is a snapshot of what I’m currently putting my energy into.</p>
-    </section>
-
     <!-- PROJECTS -->
     <section id="projects">
       <div class="label">Projects</div>
@@ -278,32 +317,32 @@
       <ul>
         <li>
           <strong>Solar Scrubber – Autonomous Solar Panel Cleaning Robot</strong><br />
-          Tracked robot with dual-sensor edge detection, hoist safety system, and spray-and-brush cleaning.
+          Tracked robot with dual-sensor edge detection, hoist safety, and brush–spray cleaning system.
         </li>
         <li>
-          <strong>FPV Drone Controls &amp; Optimization</strong><br />
-          Custom quadcopter with 3D-printed frames, tuned PID loops, and MATLAB-based control experiments.
+          <strong>FPV Drone Controls & Optimization</strong><br />
+          Custom quadcopter with PID tuning, MATLAB-based control modeling, and 3D-printed frames.
         </li>
         <li>
-          <strong>PLC &amp; Automation Labs</strong><br />
-          Programming Siemens PLCs and Festo stations for industrial automation sequences.
+          <strong>PLC & Automation Labs</strong><br />
+          Siemens S7-300 + Festo lab automation sequences, sensors, actuators, and ladder logic.
         </li>
         <li>
-          <strong>CAD &amp; Design Work</strong><br />
-          Mechanical components modeled in SolidWorks and Onshape, designed for manufacturing and 3D printing.
+          <strong>CAD & Mechanical Design</strong><br />
+          SolidWorks / Onshape parts for manufacturing and rapid prototyping, including assemblies and fixtures.
         </li>
       </ul>
-      <p class="subtle">More detailed write-ups and images coming soon.</p>
+      <p class="subtle">Full write-ups with photos coming soon.</p>
     </section>
 
     <!-- EXPERIENCE -->
     <section id="experience">
       <div class="label">Experience</div>
-      <h2>Experience &amp; Leadership</h2>
-      <p class="subtle">This section provides a deeper look at roles beyond the one-page resume.</p>
+      <h2>Experience & Leadership</h2>
+      <p class="subtle">Expanded context for my engineering and leadership roles.</p>
       <ul>
         <li><strong>[Role / Company]</strong><br />Detailed description coming soon.</li>
-        <li><strong>[Leadership / Teaching Experience]</strong><br />More detail coming soon.</li>
+        <li><strong>[Leadership Experience]</strong><br />More detail coming soon.</li>
         <li><strong>[Other Relevant Work]</strong><br />To be added.</li>
       </ul>
     </section>
@@ -317,8 +356,8 @@
         robotics, controls, product development, or systems engineering.
       </p>
       <p>
-        I bring technical strength (controls, CAD, automation, MATLAB, PLCs) alongside communication
-        and leadership skills through the MTSU MBA Lightning Track.
+        I bring technical strength (controls, CAD, MATLAB, automation, PLCs)
+        and communication/leadership ability through the MTSU MBA Lightning Track.
       </p>
       <p>I am based in Tennessee and open to relocation across the U.S.</p>
     </section>
@@ -326,11 +365,9 @@
     <!-- RESUME -->
     <section id="resume">
       <div class="label">Resume</div>
-      <h2>Resume &amp; Documents</h2>
+      <h2>Resume & Documents</h2>
       <a class="primary-button" href="resume.pdf" target="_blank">Download resume (PDF)</a>
-      <p class="subtle">
-        The sections above act as an expanded view with additional context.
-      </p>
+      <p class="subtle">This site includes an expanded overview of my work.</p>
     </section>
 
     <!-- CONTACT -->
