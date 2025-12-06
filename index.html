@@ -14,6 +14,7 @@
       --text-muted: #555555;
       --accent: #1f57a4;
       --accent-dark: #143b6f;
+      --primary-red: #c63728;
     }
 
     /* FOOTER STYLE */
@@ -37,9 +38,7 @@
       text-decoration: underline;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -121,74 +120,130 @@
       max-width: 55%;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 4px;
     }
 
+    /* HUGE Hello! */
     .hero-hello {
       font-size: 5rem;
       font-weight: 800;
       margin: 0;
+      line-height: 1;
     }
 
+    /* I'm small + Name big */
     .hero-intro {
-      font-size: 2rem;
       margin: 0;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
     }
 
-    .hero-intro span {
+    .hero-im {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .hero-name {
+      font-size: 2.6rem;
       font-weight: 800;
     }
 
+    /* Major + small & + MBA big */
     .hero-role {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      margin-top: 8px;
+      margin-top: 6px;
+      margin-bottom: 0;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
     }
 
-    /* NEW → Student + MT logo aligned */
-    .hero-bottom-row {
+    .hero-major {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .hero-and {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    /* UPDATED: MBA matches Mechatronics Engineering */
+    .hero-mba {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* Student at MTSU + logo + buttons */
+    .hero-school-row {
       display: flex;
       align-items: flex-start;
-      gap: 12px;
-      margin-top: 4px;
+      gap: 18px;
+      margin-top: 14px;
+    }
+
+    .hero-school-and-buttons {
+      display: flex;
+      flex-direction: column;
     }
 
     .hero-school {
-      font-size: 1rem;
-      color: #666;
+      font-size: 1.8rem;
+      font-weight: 600;
       margin: 0;
       line-height: 1.1;
-      padding-top: 4px;
     }
 
-    .mt-logo-inline {
-      max-height: 48px;
-      width: auto;
-      filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.25));
-    }
-
-    /* Resume tucked under */
-    .resume-under {
-      margin-top: 10px;
+    .hero-buttons {
+      margin-top: 12px;
       display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .resume-button {
+    /* Buttons */
+    .resume-button,
+    .projects-button {
+      display: inline-block;
       padding: 12px 38px;
       border-radius: 999px;
-      background: #c63728;
-      color: white;
       font-size: 1.02rem;
       font-weight: 700;
       text-decoration: none;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .resume-button {
+      background: var(--primary-red);
+      color: white;
       box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
-      transition: 0.18s;
     }
 
-    .resume-button:hover {
-      background: #a72d20;
+    .resume-button:hover { background: #a72d20; }
+
+    .projects-button {
+      background: transparent;
+      color: var(--primary-red);
+      border: 2px solid var(--primary-red);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
     }
 
+    .projects-button:hover {
+      background: rgba(198, 55, 40, 0.06);
+    }
+
+    /* Big MTSU logo */
+    .mt-logo-hero {
+      max-height: 160px;
+      width: auto;
+      filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.3));
+    }
+
+    /* Right side portrait placeholder */
     .hero-right {
       display: flex;
       justify-content: center;
@@ -204,12 +259,13 @@
       box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32);
     }
 
-    /* SLOGAN IMAGE */
+    /* Slogan */
     .slogan-section img {
       width: 100%;
       border-radius: 24px;
       box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
     }
+
   </style>
 </head>
 
@@ -235,23 +291,33 @@
       <div class="hero-left">
 
         <p class="hero-hello">Hello!</p>
-        <p class="hero-intro">I'm <span>Alex Ayala</span></p>
-        <p class="hero-role">Mechatronics Engineering & MBA</p>
 
-        <!-- Student + MT Logo Row -->
-        <div class="hero-bottom-row">
-          <p class="hero-school">Student at MTSU</p>
+        <p class="hero-intro">
+          <span class="hero-im">I’m</span>
+          <span class="hero-name">Alex Ayala</span>
+        </p>
+
+        <p class="hero-role">
+          <span class="hero-major">Mechatronics Engineering</span>
+          <span class="hero-and">&amp;</span>
+          <span class="hero-mba">MBA</span>
+        </p>
+
+        <div class="hero-school-row">
+          <div class="hero-school-and-buttons">
+            <p class="hero-school">Student at MTSU</p>
+
+            <div class="hero-buttons">
+              <a href="#resume" class="resume-button">Resume</a>
+              <a href="#projects" class="projects-button">Projects</a>
+            </div>
+          </div>
 
           <img
             src="Middle-Tennessee-Blue-Raiders-logo.png"
-            class="mt-logo-inline"
             alt="MTSU Logo"
+            class="mt-logo-hero"
           />
-        </div>
-
-        <!-- Resume Button Under -->
-        <div class="resume-under">
-          <a href="#resume" class="resume-button">Resume</a>
         </div>
 
       </div>
@@ -263,7 +329,7 @@
 
     <!-- SLOGAN -->
     <section class="slogan-section">
-      <img src="slogan-image.png" alt="Mission Statement Banner">
+      <img src="slogan-image.png" alt="Mission Statement Banner" />
     </section>
   </div>
 
@@ -277,13 +343,10 @@
   <script>
     window.addEventListener("scroll", function () {
       const nav = document.querySelector(".top-nav");
-      if (window.scrollY > 10) {
-        nav.classList.add("scrolled");
-      } else {
-        nav.classList.remove("scrolled");
-      }
+      if (window.scrollY > 10) nav.classList.add("scrolled");
+      else nav.classList.remove("scrolled");
     });
   </script>
-
 </body>
 </html>
+
