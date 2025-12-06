@@ -26,24 +26,24 @@
     }
 
     /* ===========================
-       TOP NAVIGATION (with fade)
+       TOP NAV (with fade on scroll)
        =========================== */
     .top-nav {
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(31, 87, 164, 0.55); /* translucent MTSU blue */
+      background: rgba(31, 87, 164, 0.55);
       border-bottom: 1px solid rgba(20, 59, 111, 0.7);
       height: 72px;
       display: flex;
       align-items: center;
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      transition: background-color 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
     }
 
     .top-nav.scrolled {
-      background: #1f57a4; /* solid blue when scrolled */
+      background: #1f57a4;
       border-bottom-color: #143b6f;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
     }
@@ -79,14 +79,14 @@
     }
 
     /* ===========================
-       HERO HEADER (INTRO BOX)
+       HERO INTRO SECTION
        =========================== */
     .hero {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: #f1f1f1;
-      padding: 150px 40px 150px;
+      padding: 100px 40px 100px; /* <-- adjust height here */
       border-bottom: 1px solid #d0d0d0;
     }
 
@@ -130,19 +130,18 @@
     .photo-placeholder {
       width: 260px;
       height: 260px;
-      background: #cd7f63; /* peach circle */
+      background: #cd7f63;
       border-radius: 50%;
     }
 
     /* ===========================
-       SLOGAN IMAGE BANNER
+       SLOGAN IMAGE SECTION
        =========================== */
     .slogan-section {
       padding: 0;
       margin: 0;
-      border-radius: 0;
-      border: none;
       background: transparent;
+      border: none;
     }
 
     .slogan-section img {
@@ -152,11 +151,43 @@
       border-bottom: 1px solid #d0d0d0;
     }
 
+    /* ===========================
+       FOOTER (MICRO FOOTER)
+       =========================== */
+    .micro-footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      padding: 36px 0 50px;
+      margin-top: 60px;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .micro-footer .footer-line {
+      margin: 6px 0;
+    }
+
+    .micro-footer a {
+      color: #1f57a4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .micro-footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-message {
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
     @media (max-width: 900px) {
       .hero {
         flex-direction: column;
         align-items: flex-start;
-        padding: 32px 24px 28px;
+        padding: 60px 24px 60px;
       }
 
       .hero-right {
@@ -181,6 +212,9 @@
 
 <body>
 
+  <!-- ===========================
+       TOP NAV
+       =========================== -->
   <div class="top-nav">
     <div class="top-nav-inner">
       <div class="nav-links">
@@ -197,7 +231,9 @@
 
   <div class="page">
 
-    <!-- HERO HEADER (INTRO BOX) -->
+    <!-- ===========================
+         HERO INTRO
+         =========================== -->
     <header class="hero">
       <div class="hero-left">
         <h1>Hello! I’m Alex Ayala</h1>
@@ -207,8 +243,7 @@
           <span class="hero-school">Student at MTSU</span>
         </p>
 
-        <!-- Placeholder logo – replace mt-logo.png with your actual file name later -->
-        <img class="mt-logo" src="mt-logo.png" alt="MTSU logo (placeholder)" />
+        <img class="mt-logo" src="mt-logo.png" alt="MTSU logo" />
       </div>
 
       <div class="hero-right">
@@ -216,19 +251,37 @@
       </div>
     </header>
 
-    <!-- SLOGAN IMAGE BANNER ONLY -->
+    <!-- ===========================
+         SLOGAN IMAGE BANNER
+         =========================== -->
     <section class="slogan-section">
       <img src="slogan-image.png"
            alt="Design with Ingenuity, Communicate with Clarity, Lead with Integrity">
     </section>
 
+    <!-- ===========================
+         MICRO FOOTER
+         =========================== -->
+    <footer class="micro-footer">
+      <div class="footer-line">© 2025 Designed & built by <strong>Alex Ayala</strong></div>
+
+      <div class="footer-line">
+        <a href="#contact">Contact Me</a>
+      </div>
+
+      <div class="footer-message">
+        😊 If you’ve made it this far down the page… I hope you’re having a great day.
+      </div>
+    </footer>
+
   </div>
 
-  <!-- NAV FADE ON SCROLL SCRIPT -->
+  <!-- ===========================
+       NAV FADE ON SCROLL SCRIPT
+       =========================== -->
   <script>
     window.addEventListener('scroll', function () {
       const nav = document.querySelector('.top-nav');
-      if (!nav) return;
       if (window.scrollY > 10) {
         nav.classList.add('scrolled');
       } else {
@@ -236,8 +289,8 @@
       }
     });
   </script>
+
 </body>
 
 </html>
-
 
