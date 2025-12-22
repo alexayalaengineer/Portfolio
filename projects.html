@@ -1,1 +1,112 @@
 <link rel="stylesheet" href="styles.css">
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | Alex Ayala</title>
+
+    <!-- Shared site styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="top-nav">
+      <div class="top-nav-inner">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="resume.html" class="active">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="page">
+      <h1>Resume</h1>
+
+      <p>
+        Mechatronics Engineering &amp; MBA student at Middle Tennessee State University,
+        focused on systems design, controls, and engineering-driven product development.
+        I enjoy building practical solutions that blend technical execution with clear communication.
+      </p>
+
+      <!-- Optional: add a PDF later (recommended) -->
+      <p>
+        <strong>Download:</strong>
+        <a href="Alex_Ayala_Resume.pdf">Alex_Ayala_Resume.pdf</a>
+        <span>(upload this file to your repo when ready)</span>
+      </p>
+
+      <hr />
+
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Middle Tennessee State University</strong> — B.S. Mechatronics Engineering (In Progress)
+        </li>
+        <li>
+          <strong>Middle Tennessee State University</strong> — MBA (In Progress)
+        </li>
+      </ul>
+
+      <h2>Core Skills</h2>
+      <ul>
+        <li><strong>Engineering:</strong> Systems design, controls, prototyping, testing, documentation</li>
+        <li><strong>Tools:</strong> CAD, spreadsheets, presentations, technical writing</li>
+        <li><strong>Professional:</strong> Team collaboration, project coordination, stakeholder communication</li>
+      </ul>
+
+      <h2>Experience Highlights</h2>
+      <ul>
+        <li>
+          Built and improved mechanical/electrical systems through hands-on work, iteration, and troubleshooting.
+        </li>
+        <li>
+          Supported projects by organizing tasks, tracking progress, and communicating updates clearly.
+        </li>
+        <li>
+          Combined technical problem-solving with a business mindset to keep solutions practical and user-focused.
+        </li>
+      </ul>
+
+      <h2>Projects</h2>
+      <p>
+        See my featured work on the <a href="projects.html">Projects</a> page.
+      </p>
+
+      <h2>Certifications &amp; Involvement</h2>
+      <ul>
+        <li>Add certifications here (if applicable)</li>
+        <li>Add clubs/teams/organizations here (if applicable)</li>
+      </ul>
+
+      <p style="margin-top: 22px;">
+        Want a one-page, recruiter-friendly PDF version? I can format one to match your site style.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="fun-footer">
+      © 2025 Designed and Built by Alex Ayala •
+      <a href="contact.html">Contact</a> • 😊 Have a great day!
+    </footer>
+
+    <!-- Nav scroll effect -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".top-nav");
+        if (window.scrollY > 10) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
