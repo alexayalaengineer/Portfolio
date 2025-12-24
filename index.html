@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,6 +7,7 @@
   <title>Alex Ayala | Portfolio</title>
 
   <!-- Shared site styles -->
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -25,64 +27,68 @@
   </div>
 
   <div class="page">
-    <!-- HERO (HOME ONLY) -->
+    <!-- HERO -->
     <header class="hero">
       <div class="hero-left">
         <p class="hero-hello">Hello!</p>
 
-        <p class="hero-intro">
-          <span class="hero-im">I’m</span>
-          <span class="hero-name">Alex Ayala</span>
+```
+    <p class="hero-intro">
+      <span class="hero-im">I’m</span>
+      <span class="hero-name">Alex Ayala</span>
+    </p>
+
+    <p class="hero-role">
+      <span class="hero-major">Mechatronics Engineering</span>
+      <span class="hero-and">&amp;</span>
+    </p>
+
+    <p class="hero-mba-line">
+      <span class="hero-mba">MBA</span>
+    </p>
+
+    <div class="hero-school-row">
+      <div class="hero-school-and-buttons">
+        <p class="hero-school">
+          Student at Middle Tennessee State University
         </p>
 
-        <p class="hero-role">
-          <span class="hero-major">Mechatronics Engineering</span>
-          <span class="hero-and">&amp;</span>
-        </p>
-
-        <p class="hero-mba-line">
-          <span class="hero-mba">MBA</span>
-        </p>
-
-        <div class="hero-school-row">
-          <div class="hero-school-and-buttons">
-            <p class="hero-school">
-              Student at Middle Tennessee State University
-            </p>
-
-            <div class="hero-buttons">
-              <a href="resume.html" class="resume-button">Resume</a>
-              <a href="projects.html" class="projects-button">Projects</a>
-            </div>
-          </div>
-
-          <img
-            src="Middle-Tennessee-Blue-Raiders-logo.png"
-            alt="MTSU Logo"
-            class="mt-logo-hero"
-          />
+        <div class="hero-buttons">
+          <a href="resume.html" class="resume-button">Resume</a>
+          <a href="projects.html" class="projects-button">Projects</a>
         </div>
       </div>
 
-      <div class="hero-right">
-        <img
-          src="Headshot2.png"
-          alt="Alex Ayala Headshot"
-          class="profile-photo"
-        />
-      </div>
-    </header>
-
-    <!-- SLOGAN (HOME ONLY) -->
-    <section class="slogan-section">
       <img
-        src="slogan-image.png"
-        alt="Designing with Ingenuity | Communicating with Empathy | Leading with Integrity"
+        src="Middle-Tennessee-Blue-Raiders-logo.png"
+        alt="MTSU Logo"
+        class="mt-logo-hero"
       />
-    </section>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img
+      src="Headshot2.png"
+      alt="Alex Ayala Headshot"
+      class="profile-photo"
+    />
+  </div>
+</header>
+
+<!-- SLOGAN (ALWAYS FOLLOWS HERO) -->
+<section class="slogan-section">
+  <img
+    src="slogan-image.png"
+    alt="Designing with Ingenuity | Communicating with Empathy | Leading with Integrity"
+  />
+</section>
+```
+
   </div>
 
   <!-- FOOTER -->
+
   <footer class="fun-footer">
     © 2025 Designed and Built by Alex Ayala •
     <a href="contact.html">Contact</a> •
@@ -90,6 +96,7 @@
   </footer>
 
   <!-- Nav scroll effect -->
+
   <script>
     window.addEventListener("scroll", function () {
       const nav = document.querySelector(".top-nav");
@@ -100,6 +107,7 @@
       }
     });
   </script>
+
 </body>
 </html>
 
