@@ -100,12 +100,46 @@ a {
   border-radius: 18px;
   box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
   border: 1px solid rgba(15, 23, 42, 0.06);
+
+  /* needed for the background image overlay */
+  position: relative;
+  overflow: hidden;
+}
+
+/* HERO BACKGROUND IMAGE (TBILISI) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("TbilisiPhoto.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* 20% opacity */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* keep hero content above background */
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-left {
   min-width: 0;
 }
 
+/* Make the HeroText.png behave nicely */
+.hero-text-image {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 0 14px;
+}
+
+/* If you bring these back later, they’re still ready */
 .hero-hello {
   margin: 0 0 10px;
   font-weight: 700;
@@ -434,33 +468,10 @@ p {
   .about-card {
     padding: 20px;
   }
+
+  .hero-text-image {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
 }
-
-/* =====================================
-   HERO BACKGROUND IMAGE (TBILISI)
-   ===================================== */
-
-.hero {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("TbilisiPhoto.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.2; /* 20% opacity */
-  z-index: 0;
-  pointer-events: none;
-}
-
-.hero > * {
-  position: relative;
-  z-index: 1;
-}
-
 
