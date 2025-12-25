@@ -590,11 +590,19 @@ p {
   color: #ffffff;
 }
 
+.hero-mini-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
 .mtsu-mark {
-  display: block;
-  margin-top: 18px;
-  height: 46px;
+  height: 42px;
   width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.18));
 }
 
