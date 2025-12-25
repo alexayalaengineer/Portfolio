@@ -609,7 +609,7 @@ p {
   width: auto;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 2px;         /* pushes it right */
+  margin-left: 30px;         /* pushes it right */
   transform: translateY(-2px);
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.18));
 }
