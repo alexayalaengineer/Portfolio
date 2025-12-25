@@ -667,7 +667,7 @@ p {
   display: flex;
   justify-content: flex-start;   /* LEFT align buttons */
   align-items: center;
-  gap: 16px;                     /* space BETWEEN buttons */
+  gap: 25px;                     /* space BETWEEN buttons */
   margin-top: 30px;
 
   margin-left: 0;                /* control left offset */
