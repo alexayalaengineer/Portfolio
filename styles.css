@@ -664,7 +664,7 @@ p {
 .hero-button-row {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 30px;
   margin-top: 18px;
   flex-wrap: wrap;
 }
