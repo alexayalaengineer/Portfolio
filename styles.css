@@ -649,7 +649,7 @@ p {
   .hero-right-circle {
     width: 220px;
     height: 220px;
-    align-self: center;
+    justify-self: center;
   }
 
   .hero-title {
