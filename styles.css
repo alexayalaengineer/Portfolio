@@ -660,3 +660,12 @@ p {
     font-size: 28px;
   }
 }
+
+.hero-button-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
