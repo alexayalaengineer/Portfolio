@@ -598,19 +598,22 @@ p {
 .hero-mini-row {
   display: flex;
   align-items: center;
-  gap: 14px;
+  justify-content: space-between;
+  gap: 16px;
   margin-top: 14px;
+  max-width: 420px;
 }
 
 .mtsu-mark {
-  height: 42px;
+  height: 60px;              /* BIGGER logo */
   width: auto;
   display: inline-block;
   vertical-align: middle;
-  margin: 0;
-   transform: translateY(-1px);
+  margin-left: 18px;         /* pushes it right */
+  transform: translateY(-2px);
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.18));
 }
+
 
 /* right big circle headshot */
 .hero-right-circle {
