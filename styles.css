@@ -547,18 +547,23 @@ p {
 }
 
 .hero-mini {
-  margin: 0 0 14px;
+  margin: 0;
   font-size: 16px;
   font-weight: 700;
   color: #4a4a4a;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-.hero-buttons-row {
+
+.hero-mini-row {
   display: flex;
-  gap: 16px;
   align-items: center;
-  margin-top: 10px;
+  gap: 14px;
+  margin-top: 14px;
+  flex-wrap: nowrap;
 }
+
 
 .btn-pill {
   display: inline-flex;
