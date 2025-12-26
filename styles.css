@@ -569,7 +569,7 @@ p {
 .resume-entry-date {
   font-style: italic;
   color: #3c3f42;
-  font-weight: 750;
+  font-weight: 600;
 }
 
 .resume-entry-sub {
@@ -587,7 +587,7 @@ p {
 .resume-school {
   text-align: left;
    font-style: italic;
-
+  font-weight: 600;
 }
 
 .resume-location {
