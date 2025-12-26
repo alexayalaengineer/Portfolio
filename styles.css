@@ -501,7 +501,7 @@ p {
   font-size: 1rem;        /* controls size */
   font-weight: 400;       /* controls weight */
   color: #3c3f42;         /* controls color */
-  line-height: 1.45;
+  line-height: 4;
 }
 
 
