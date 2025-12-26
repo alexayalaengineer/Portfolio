@@ -488,8 +488,9 @@ p {
 
 .resume-tagline {
   margin-top: 6px;
-  color: #334155;
+  color: #3c3f42;
   font-weight: 700;
+  font-size: 1.75rem;
 }
 
 .resume-contact {
