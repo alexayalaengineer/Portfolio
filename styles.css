@@ -499,8 +499,8 @@ p {
   flex-direction: column;
   gap: 4px;
   font-size: 1rem;        /* controls size */
-  font-weight: 400;       /* controls weight */
-  color: #3c3f42;         /* controls color */
+  font-weight: 300;       /* controls weight */
+  color: #000000;         /* controls color */
   line-height: 1.2;
 }
 
