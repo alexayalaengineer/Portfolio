@@ -319,6 +319,46 @@ a {
   z-index: 2;
 }
 
+/* ---------------------------
+   PROFESSIONAL OVERVIEW
+---------------------------- */
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 22px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.overview-text p {
+  margin: 0 0 12px 0;
+  color: #000000;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.overview-images {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.overview-images img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* ============================
    GUIDING PRINCIPLES (ABOUT)
