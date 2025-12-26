@@ -400,6 +400,15 @@ p {
 /* ============================
    RESUME PAGE (HTML VERSION)
 ============================ */
+/* Bottom resume actions */
+.resume-bottom-actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
 
 .resume-page {
   padding-top: 16px;
@@ -426,19 +435,6 @@ p {
   flex-wrap: wrap;
 }
 
-.resume-download,
-.resume-open {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  padding: 0 18px;
-  border-radius: 999px;
-  font-weight: 800;
-  text-decoration: none;
-  border: 1px solid transparent;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-}
 
 .resume-download {
   background: #1f57a4;
