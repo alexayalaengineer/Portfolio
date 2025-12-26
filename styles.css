@@ -438,12 +438,12 @@ a {
    INGENUITY – Deep Blue
 ===================== */
 .principle-row.ingenuity {
-  background: #eef2ff;
+  background: #f3f6ff;
   border-color: rgba(30, 58, 138, 0.18);
 }
 
 .principle-row.ingenuity .principle-def {
-  background: #1e3a8a;
+  background: #162a75;
   color: #ffffff;
 }
 
@@ -451,12 +451,12 @@ a {
    CLARITY – Teal
 ===================== */
 .principle-row.clarity {
-  background: #ecfdf5;
+  background: #f0fdfa;
   border-color: rgba(6, 95, 70, 0.18);
 }
 
 .principle-row.clarity .principle-def {
-  background: #065f46;
+  background: #064e3b;
   color: #ffffff;
 }
 
@@ -464,12 +464,12 @@ a {
    INTEGRITY – Violet
 ===================== */
 .principle-row.integrity {
-  background: #f5f3ff;
+  background: #faf7ff;
   border-color: rgba(76, 29, 149, 0.18);
 }
 
 .principle-row.integrity .principle-def {
-  background: #4c1d95;
+  background: #3b167a
   color: #ffffff;
 }
 
