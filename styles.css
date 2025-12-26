@@ -567,7 +567,8 @@ p {
 }
 
 .resume-entry-date {
-  color: #334155;
+  font-style: italic;
+  color: #3c3f42;
   font-weight: 750;
 }
 
@@ -575,6 +576,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  font-style: italic;
   margin-top: 4px;
   font-size: 1.05rem;
   font-weight: 600;
@@ -584,12 +586,15 @@ p {
 
 .resume-school {
   text-align: left;
+   font-style: italic;
+
 }
 
 .resume-location {
   text-align: right;
+  font-style: italic;
   white-space: nowrap;
-  color: #334155;
+  color: #3c3f42;
   font-weight: 600;
 }
 
