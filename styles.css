@@ -540,6 +540,11 @@ p {
   margin-top: 15px;
 }
 
+/* Remove extra gap between stacked education entries */
+.resume-entry-sub + .resume-entry {
+  margin-top: 6px;
+}
+
 .resume-entry-top {
   display: flex;
   justify-content: space-between;
