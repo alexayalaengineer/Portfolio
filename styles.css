@@ -532,7 +532,7 @@ p {
   width: calc(100% - 10px);  /* full width minus padding */
   height: 3px;
   background-color: #073763;
-  margin-top: 4px;
+  margin-top: 3px;
   margin-left: 0px;
 }
 
@@ -549,8 +549,11 @@ p {
 }
 
 .resume-entry-title {
-  font-weight: 1000;
-  color: #000000;
+   font-family: "Montserrat", sans-serif;  /* font family */
+  font-size: 1.1rem;                      /* size (≈ 14–15pt) */
+  font-weight: 800;                       /* thickness */
+  color: #000000;                         /* color */
+  line-height: 1.25;   
 }
 
 .resume-entry-date {
