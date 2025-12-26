@@ -372,15 +372,16 @@ a {
 
 .principle-name {
   margin: 0 0 6px;
-  font-size: 1.25rem;
-  color: #0f172a;
+  font-size: 2rem;
+  color: #000000;
 }
 
 .principle-explain p {
   margin: 0;
-  color: #334155;
+  color: #000000;
+  margin: 0 0 12px 0;
   line-height: 1.7;
-  font-size: 1.02rem;
+  font-size: 1rem;
 }
 
 
