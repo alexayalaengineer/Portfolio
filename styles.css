@@ -671,22 +671,23 @@ p {
 .resume-certs li {
   display: flex;
   justify-content: space-between;
-  gap: 14px;
-  flex-wrap: wrap;
-  padding: 10px 12px;
-  border-radius: 14px;
-  background: rgba(31, 87, 164, 0.06);
-  border: 1px solid rgba(31, 87, 164, 0.16);
+  align-items: baseline;
+  gap: 16px;
+  padding: 2px 0;
 }
 
 .resume-cert-name {
-  font-weight: 800;
-  color: #0f172a;
+  font-weight: 500;
+  color: #000000;
+  font-size: 1rem;
 }
 
 .resume-cert-org {
-  font-weight: 750;
-  color: #334155;
+  font-style: italic;
+  font-weight: 300;
+  color: #3c3f42;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 /* Mobile */
