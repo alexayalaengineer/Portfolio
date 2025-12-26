@@ -549,11 +549,11 @@ p {
 }
 
 .resume-entry-title {
-   font-family: "Montserrat", sans-serif;  /* font family */
-  font-size: 1.1rem;                      /* size (≈ 14–15pt) */
-  font-weight: 800;                       /* thickness */
+  font-family: "Montserrat", sans-serif;  /* font family */
+  font-size: 1.3rem;                      /* size (≈ 14–15pt) */
+  font-weight: 1000;                       /* thickness */
   color: #000000;                         /* color */
-  line-height: 1.25;   
+  line-height: 1.15;   
 }
 
 .resume-entry-date {
