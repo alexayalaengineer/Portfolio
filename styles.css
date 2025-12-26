@@ -619,7 +619,14 @@ a {
   }
 }
 
+.hobby-text p {
+  margin: 0 0 12px 0;   /* removes the top margin */
+  line-height: 1.7;
+}
 
+.hobby-text p:last-child {
+  margin-bottom: 0;
+}
 
 
 /* ---------------------------
