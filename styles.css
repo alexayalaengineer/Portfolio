@@ -451,25 +451,25 @@ a {
    CLARITY – Teal
 ===================== */
 .principle-row.clarity {
-  background: #d3dfdfff;
+  background: #f0fbf9;
   border-color: rgba(6, 95, 70, 0.18);
 }
 
 .principle-row.clarity .principle-def {
-  background: #006e70ff;
+  background: #064a45;
   color: #ffffff;
 }
 
 /* =====================
-   INTEGRITY – Violet
+   INTEGRITY – Orange
 ===================== */
 .principle-row.integrity {
-  background: #006e70ff;
+  background: #fff6ed;
   border-color: rgba(76, 29, 149, 0.18);
 }
 
 .principle-row.integrity .principle-def {
-  background: #e5d8eeff;
+  background: #7a2e00;
   color: #ffffff;
 }
 
