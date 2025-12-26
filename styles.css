@@ -483,7 +483,7 @@ p {
   font-size: 3.5rem;
   font-weight: 900;
   letter-spacing: -0.2px;
-  color: #1f57a4;
+  color: #073763;
 }
 
 .resume-tagline {
@@ -502,6 +502,15 @@ p {
   font-weight: 400;       /* controls weight */
   color: #3c3f42;         /* controls color */
   line-height: 1.2;
+}
+
+/* Resume summary (professional statement) */
+.resume-summary p {
+  font-size: 1rem;        /* controls size */
+  font-weight: 500;       /* controls thickness */
+  color: #000000         /* controls color */
+  line-height: 1.15;
+  margin-top: 10px;
 }
 
 
