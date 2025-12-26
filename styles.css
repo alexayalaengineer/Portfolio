@@ -398,7 +398,8 @@ a {
   font-weight: 900;
   letter-spacing: 0.2px;
   line-height: 1.25;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: 3rem;
+  font-style: italic;
 
   color: #073763;
   padding: 16px 14px;
