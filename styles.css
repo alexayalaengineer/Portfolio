@@ -539,6 +539,8 @@ p {
 /* Big gap after each job */
 .resume-bullets {
   margin-bottom: 22px;
+   color: #000000 
+   font-size: 1rem;
 }
 
 /* BIG spacing after the first degree block (MBA) */
@@ -558,7 +560,7 @@ p {
   font-family: "Montserrat", sans-serif;  /* font family */
   font-size: 1.5rem;                      /* size (≈ 14–15pt) */
   font-weight: 1000;                       /* thickness */
-  color: #000000;                         /* color */
+  color: #000000;
   line-height: 1.15;   
 }
 
@@ -600,8 +602,8 @@ p {
 
 .resume-note {
   margin: 8px 0 0;
-  color: #475569;
-  font-size: 0.98rem;
+  color: #000000;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -609,12 +611,15 @@ p {
 .resume-bullets {
   margin: 8px 0 0;
   padding-left: 18px;
-  color: #334155;
+  color: #000000;
+   font-size: 1rem;  /* color */
   line-height: 1.65;
 }
 
 .resume-bullets.tight {
   margin-top: 6px;
+   color: #000000;
+   font-size: 1rem;  /* color */
 }
 
 /* Skills grid */
