@@ -398,7 +398,7 @@ a {
   font-weight: 900;
   letter-spacing: 0.2px;
   line-height: 1.25;
-  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-size: clamp(1rem, 2vw, 3rem);
 
   color: #073763;
   padding: 16px 14px;
