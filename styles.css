@@ -498,6 +498,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  font-style: italic;
   font-size: 1rem;        /* controls size */
   font-weight: 300;       /* controls weight */
   color: #000000;         /* controls color */
