@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EESA Study Abroad | Alex Ayala</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="top-nav">
+      <div class="top-nav-inner">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="page project-detail-page">
+      <header class="project-detail-header">
+        <a class="project-back" href="projects.html">← Back to Projects</a>
+        <h1 class="project-detail-title">EESA Study Abroad</h1>
+        <p class="project-detail-subtitle">
+          Business and operations work delivered on-site with real clients, including financial tracking, marketing, pricing, workflow mapping, and growth planning.
+        </p>
+      </header>
+
+      <section class="project-detail-hero" aria-label="Project hero">
+        <img
+          class="project-detail-image"
+          src="YOUR_TRAVEL_IMAGE.JPG"
+          alt="EESA Study Abroad project image"
+        />
+      </section>
+
+      <section class="project-detail-content" aria-label="Project details">
+        <div class="project-detail-card">
+          <h2>Overview</h2>
+          <p>
+            EESA Study Abroad involved hands-on consulting style work with real organizations while working internationally.
+            The experience emphasized practical operations support, clear communication with stakeholders, and translating
+            messy real-world problems into structured, actionable improvements.
+          </p>
+        </div>
+
+        <div class="project-detail-grid">
+          <div class="project-detail-card">
+            <h2>Tools</h2>
+            <ul>
+              <li>Financial tracking and bookkeeping (spreadsheets)</li>
+              <li>Workflow mapping and process documentation</li>
+              <li>Pricing analysis and basic profitability thinking</li>
+              <li>Marketing support and brand visibility planning</li>
+            </ul>
+          </div>
+
+          <div class="project-detail-card">
+            <h2>Highlights</h2>
+            <ul>
+              <li>Worked directly with clients on-site and delivered tangible outputs</li>
+              <li>Improved tracking systems for revenue, costs, and inventory</li>
+              <li>Mapped workflows to identify bottlenecks and improvement opportunities</li>
+              <li>Supported growth planning through structured recommendations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-detail-card">
+          <h2>Links</h2>
+          <p>
+            <a href="#" target="_blank" rel="noopener">Project summary (placeholder)</a>
+            <br />
+            <a href="#" target="_blank" rel="noopener">Deliverables or report (placeholder)</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="fun-footer">
+      © 2025 Designed and Built by Alex Ayala •
+      <a href="contact.html">Contact</a> • 😊 Have a great day!
+    </footer>
+
+    <!-- Nav scroll effect -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".top-nav");
+        if (window.scrollY > 10) nav.classList.add("scrolled");
+        else nav.classList.remove("scrolled");
+      });
+    </script>
+  </body>
+</html>
