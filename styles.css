@@ -1600,4 +1600,50 @@ p {
   }
 }
 
+/* =========================================
+   EESA STUDY ABROAD – HERO TILE OVERRIDE
+   ========================================= */
+
+.project-hero-tile {
+  position: relative;
+  height: 260px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-image: url("EESA study abroad project cover photo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+/* dark overlay for contrast */
+.project-hero-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.38);
+  z-index: 1;
+}
+
+/* title wrapper */
+.project-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 24px;
+}
+
+/* BIG BOLD TITLE */
+.project-hero-title {
+  font-family: "Lexend", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  te
 
