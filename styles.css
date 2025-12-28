@@ -1267,7 +1267,7 @@ main.page {
 /* 2x2 grid */
 .contact-grid {
   width: 100%;
-  max-width: 800px;   /* ← sweet spot */
+  max-width: 900px;   /* ← sweet spot */
   margin: 0 auto;
 
   display: grid;
@@ -1347,7 +1347,7 @@ main.page {
 
 .contact-tile-title {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: #0f172a;
 }
@@ -1374,7 +1374,7 @@ main.page {
   margin: 0;
   color: #334155;
   line-height: 1.65;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
