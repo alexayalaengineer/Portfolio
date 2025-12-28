@@ -1259,12 +1259,12 @@ main.page {
 }
 
 .contact-grid {
-  max-width: 1700px;
+  max-width: 4000px;
   margin: 0 auto;
   padding: 0 18px;
 
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-columns: 2.5fr 2.5fr;
   gap: 18px;
 }
 
@@ -1280,7 +1280,7 @@ main.page {
 /* 2x2 grid */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-columns: 2.5fr 2.5fr;
   gap: 16px;
   margin-top: 14px;
 }
