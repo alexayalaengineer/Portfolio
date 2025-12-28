@@ -1267,7 +1267,7 @@ main.page {
 /* 2x2 grid */
 .contact-grid {
   width: 100%;
-  max-width: 1400px;   /* ← sweet spot */
+  max-width: 1100px;   /* ← sweet spot */
   margin: 0 auto;
 
   display: grid;
