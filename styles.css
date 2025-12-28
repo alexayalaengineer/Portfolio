@@ -27,88 +27,47 @@ a {
 /* ---------------------------
    NAV — DARK AT TOP, SOFTER ON SCROLL
 ---------------------------- */
+/* ---------------------------
+   NAV (OLD / SIMPLE)
+---------------------------- */
 .top-nav {
   position: sticky;
   top: 0;
   z-index: 10;
-  height: 68px;
-  display: flex;
-  align-items: center;
-
-  /* dark default */
   background: #1f57a4;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-
-  transition: background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-/* softer / glassy when scrolled */
-.top-nav.scrolled {
-  background: rgba(31, 87, 164, 0.55);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
-  border-bottom-color: rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid #143b6f;
 }
 
 .top-nav-inner {
   max-width: 1100px;
   margin: 0 auto;
-  width: 100%;
   padding: 0 18px;
-  display: flex;
-  justify-content: center;
 }
 
 .nav-links {
-  width: 100%;
-  max-width: 900px;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-
-  font-size: 1.02rem;
+  gap: 18px;
+  padding: 14px 0;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 999px;
-
-  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: 0.15s;
 }
 
 .nav-links a:hover {
-  background: rgba(255, 255, 255, 0.18);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.15);
 }
 
-/* active page link */
 .nav-links a.active {
-  background: rgba(255, 255, 255, 0.28);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.22);
 }
-
-/* small screens */
-@media (max-width: 640px) {
-  .top-nav {
-    height: auto;
-    padding: 10px 0;
-  }
-
-  .nav-links {
-    font-size: 0.98rem;
-    gap: 8px;
-  }
-
-  .nav-links a {
-    padding: 8px 12px;
-  }
-}
-
 /* ---------------------------
    HERO (HOME)
    Older hero system. Safe to keep.
