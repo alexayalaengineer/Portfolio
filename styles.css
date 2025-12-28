@@ -1267,9 +1267,8 @@ main.page {
 /* 2x2 grid */
 .contact-grid {
   width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: 0;
+  max-width: 1400px;   /* ← sweet spot */
+  margin: 0 auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
