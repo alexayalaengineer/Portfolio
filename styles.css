@@ -25,9 +25,6 @@ a {
 }
 
 /* ---------------------------
-   NAV — DARK AT TOP, SOFTER ON SCROLL
----------------------------- */
-/* ---------------------------
    NAV (OLD / SIMPLE)
 ---------------------------- */
 .top-nav {
@@ -68,6 +65,7 @@ a {
 .nav-links a.active {
   background: rgba(255, 255, 255, 0.22);
 }
+
 /* ---------------------------
    HERO (HOME)
    Older hero system. Safe to keep.
