@@ -25,8 +25,10 @@ a {
 }
 
 .page.contact-page {
-  max-width: 3000px;
-  outline: 6px solid blue;
+  max-width: none;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 /* ---------------------------
@@ -1253,9 +1255,8 @@ main.page {
   flex-wrap: wrap;
 }
 
-
 /* ============================
-   CONTACT PAGE (MATCH HOME/ABOUT CARD STYLE)
+   CONTACT PAGE
 ============================ */
 
 .contact-page {
@@ -1263,36 +1264,29 @@ main.page {
   padding-bottom: 60px;
 }
 
+/* 2x2 grid */
 .contact-grid {
-  max-width: 4000px;
-  margin: 0 auto;
-  padding: 0 18px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 
   display: grid;
-  grid-template-columns: 2.5fr 2.5fr;
+  grid-template-columns: 1fr 1fr;
   gap: 18px;
+  margin-top: 14px;
 }
 
 /* Mobile */
 @media (max-width: 800px) {
   .contact-grid {
     grid-template-columns: 1fr;
-    margin-top: 20px;
   }
 }
 
-
-/* 2x2 grid */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 2.5fr 2.5fr;
-  gap: 16px;
-  margin-top: 14px;
-}
-
-/* Each tile (matches hobby-card vibe) */
+/* Each tile */
 .contact-tile {
-  background: #ffffff; /* pure white */
+  background: #ffffff;
   border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: 16px;
   padding: 18px;
@@ -1304,18 +1298,28 @@ main.page {
   align-items: center;
   text-align: center;
 
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
 
-.contact-tile:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 26px rgba(15, 23, 42, 0.07);
+/* Make entire tile clickable */
+.contact-tile-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
+/* Hover */
 .contact-tile:hover {
-  background: #eef4ff; /* very light blue */
+  background: #eef4ff;
   transform: translateY(-2px);
   box-shadow: 0 14px 26px rgba(15, 23, 42, 0.10);
+}
+
+/* Focus */
+.contact-tile-link:focus-visible {
+  outline: 3px solid rgba(7, 36, 63, 0.35);
+  outline-offset: 4px;
+  border-radius: 18px;
 }
 
 .contact-tile-top {
@@ -1328,28 +1332,18 @@ main.page {
   padding: 12px 0;
 }
 
-
 .contact-icon {
-  width: 140px;
-  height: 140px;
-
+  width: 170px;
+  height: 170px;
   object-fit: contain;
   border-radius: 50%;
 
-  /* remove box look */
   background: transparent;
   border: none;
   padding: 0;
 
   display: block;
-}
-
-
-
-  /* subtle framed icon look */
-  background: rgba(31, 87, 164, 0.08);
-  border: 1px solid rgba(31, 87, 164, 0.18);
-  padding: 8px;
+  margin-bottom: 14px;
 }
 
 .contact-tile-title {
@@ -1357,7 +1351,6 @@ main.page {
   font-size: 1.35rem;
   font-weight: 800;
   color: #0f172a;
-  text-align: center;
 }
 
 .contact-tile-value,
@@ -1367,12 +1360,9 @@ main.page {
   line-height: 1.35;
 }
 
-
 .contact-tile-value {
   color: #123a72;
-  text-decoration: none;
   font-weight: 700;
-  line-height: 1.5;
   word-break: break-word;
 }
 
@@ -1393,84 +1383,6 @@ main.page {
   color: #64748b;
   font-weight: 650;
 }
-
-.contact-tile {
-  align-items: center;
-  text-align: center;
-}
-
-/* CTA buttons row */
-.contact-cta-row {
-  margin-top: 18px;
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-wrap {
-    padding: 22px 18px;
-  }
-
-  .contact-title {
-    font-size: 2.15rem;
-  }
-}
-
-/* Make entire tile clickable */
-.contact-tile-link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-/* Large clean circular icons */
-.contact-icon {
-  width: 170px;
-  height: 170px;
-
-  object-fit: contain;
-  border-radius: 50%;
-
-  background: transparent;
-  border: none;
-  padding: 0;
-
-  display: block;
-  margin-bottom: 14px;
-}
-
-
-/* Text spacing polish */
-.contact-tile-title {
-  margin: 0;
-}
-
-.contact-tile-value,
-.contact-tile-text {
-  margin-top: 6px;
-  line-height: 1.25;
-}
-
-/* Hover / focus polish */
-.contact-tile-link:hover {
-  transform: translateY(-2px);
-}
-
-.contact-tile-link:focus-visible {
-  outline: 3px solid rgba(7, 36, 63, 0.35);
-  outline-offset: 4px;
-  border-radius: 18px;
-}
-
 
 
 /* ============================
