@@ -85,7 +85,7 @@ a {
 }
 
 .top-nav.scrolled {
-  background: rgba(31, 87, 164, 0.85);
+  background: rgba(31, 87, 164, 0.45);
   backdrop-filter: blur(8px);
   transition: background 0.25s ease, backdrop-filter 0.25s ease;
 }
@@ -112,7 +112,7 @@ a {
 
   .nav-links {
     justify-content: flex-start;      /* looks better than center when scrolling */
-    gap: 14px;                        /* smaller gap so more fits */
+    gap: 10px;                        /* smaller gap so more fits */
     padding: 12px 4px;
     flex-wrap: nowrap;                /* ✅ no wrapping */
     white-space: nowrap;              /* ✅ keep text on one line */
@@ -131,8 +131,6 @@ a {
     font-size: 0.95rem;
   }
 }
-
-
 
 /* ---------------------------
    HERO (HOME)
