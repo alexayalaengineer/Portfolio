@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MATLAB 6 Bar Kinematic System | Alex Ayala</title>
+    <title>MATLAB Six Bar Kinematic System | Alex Ayala</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Site styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -22,65 +32,286 @@
       </div>
     </div>
 
-    <main class="page project-detail-page">
-      <header class="project-detail-header">
-        <a class="project-back" href="projects.html">← Back to Projects</a>
-        <h1 class="project-detail-title">MATLAB 6 Bar Kinematic System</h1>
-        <p class="project-detail-subtitle">
-          Modeled and analyzed a multi-link mechanism in MATLAB to study kinematics, motion behavior, and parameter sensitivity.
+    <!-- PAGE CONTENT -->
+    <div class="page">
+      <!-- Header card -->
+      <section class="section-container project-header-card">
+        <a class="project-back-btn" href="projects.html">← Back to Projects</a>
+
+        <h1 class="overview-title project-title">MATLAB Six Bar Kinematic System</h1>
+
+        <p class="project-subtitle">
+          Parametric MATLAB model that computes and animates a six bar mechanism; demo shows a
+          rotating Doppler-radar truck transitioning from driving to scanning orientation.
         </p>
-      </header>
 
-      <section class="project-detail-hero" aria-label="Project hero">
-        <img
-          class="project-detail-image"
-          src="YOUR_KINEMATICS_IMAGE.JPG"
-          alt="MATLAB 6 Bar Kinematic System project image"
-        />
-      </section>
+        <p class="project-meta">
+          Summer 2025 <span class="dot">•</span> Individual class project <span class="dot">•</span>
+          ENGR 3590 <span class="dot">•</span> MTSU Kinematics and Dynamics of Machinery
+        </p>
 
-      <section class="project-detail-content" aria-label="Project details">
-        <div class="project-detail-card">
-          <h2>Overview</h2>
-          <p>
-            Write your 4 to 7 sentence overview here. Keep it punchy and results focused.
-          </p>
-        </div>
-
-        <div class="project-detail-grid">
-          <div class="project-detail-card">
-            <h2>Tools</h2>
-            <ul>
-              <li>MATLAB</li>
-              <li>Plots and data visualization</li>
-              <li>Kinematic modeling</li>
-            </ul>
-          </div>
-
-          <div class="project-detail-card">
-            <h2>Highlights</h2>
-            <ul>
-              <li>Built a repeatable workflow for parameter sweeps</li>
-              <li>Generated clear plots for motion behavior</li>
-              <li>Validated outputs with sanity checks</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="project-detail-card">
-          <h2>Links</h2>
-          <p>
-            <a href="#" target="_blank" rel="noopener">GitHub repo</a>
-            <br />
-            <a href="#" target="_blank" rel="noopener">Report or PDF</a>
-          </p>
+        <div class="project-hero">
+          <!-- Placeholder: replace with your preferred hero image -->
+          <img src="MATLAB6BAR_Hero.JPG" alt="MATLAB Six Bar Kinematic System hero image" />
         </div>
       </section>
-    </main>
+
+      <!-- Overview -->
+      <section class="info-block livebolt-block">
+        <h2 class="block-title">Overview &amp; Simulation Context</h2>
+
+        <p class="principles-intro">
+          This project involved developing a parametric MATLAB model to analyze and simulate the
+          kinematics of a planar six-bar linkage. The mechanism was modeled in the context of a mobile
+          Doppler radar truck, where a rotating mechanical linkage transitions the radar assembly between
+          a driving configuration and an elevated scanning position. The goal of the simulation was to
+          translate theoretical kinematic principles into a functional computational tool capable of
+          calculating motion and visualizing system behavior over time.
+        </p>
+
+        <div class="project-inline-grid">
+          <figure class="project-figure">
+            <!-- Placeholder -->
+            <img
+              src="Doppler_Truck_Driving_Reference.JPG"
+              alt="Doppler radar truck in driving configuration (real-world reference)."
+            />
+            <figcaption>Doppler radar truck in driving configuration (real-world reference).</figcaption>
+          </figure>
+
+          <figure class="project-figure">
+            <!-- Placeholder -->
+            <img
+              src="Doppler_Truck_Scanning_Reference.JPG"
+              alt="Doppler radar truck in scanning configuration (real-world reference)."
+            />
+            <figcaption>Doppler radar truck in scanning configuration (real-world reference).</figcaption>
+          </figure>
+        </div>
+
+        <p class="principles-close">
+          Using user-defined geometric parameters and an input rotation, the model computes angular
+          position, angular velocity, and angular acceleration for each linkage, as well as the resulting
+          linear position, velocity, and acceleration of key points on the system. The final output includes
+          both quantitative data and an animated visualization of the mechanism’s motion.
+        </p>
+
+        <div class="project-inline-grid">
+          <figure class="project-figure">
+            <!-- Placeholder -->
+            <img
+              src="Doppler_Truck_Driving_Graphic.JPG"
+              alt="Doppler radar truck in driving configuration (graphical representation)."
+            />
+            <figcaption>Doppler radar truck in driving configuration (graphical representation).</figcaption>
+          </figure>
+
+          <figure class="project-figure">
+            <!-- Placeholder -->
+            <img
+              src="Doppler_Truck_Scanning_Graphic.JPG"
+              alt="Doppler radar truck in scanning configuration (graphical representation)."
+            />
+            <figcaption>Doppler radar truck in scanning configuration (graphical representation).</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- System Setup -->
+      <section class="info-block livebolt-block">
+        <h2 class="block-title">System Setup &amp; Kinematic Model</h2>
+
+        <p class="principles-intro">
+          The system is modeled as a constrained planar six-bar linkage with fixed pivots, rotating links,
+          and dependent joints. Each link length, joint location, and reference angle is explicitly defined,
+          allowing the mechanism geometry to be adjusted parametrically. Loop-closure relationships are
+          used to enforce kinematic constraints between connected links.
+        </p>
+
+        <p class="principles-close">
+          A labeled schematic of the linkage identifies each link, joint, and reference angle used in the
+          analysis and serves as the foundation for the position, velocity, and acceleration calculations
+          performed in MATLAB.
+        </p>
+
+        <figure class="project-figure wide">
+          <!-- Placeholder -->
+          <img
+            src="SixBar_Labeled_Schematic.JPG"
+            alt="Labeled six-bar, three-loop linkage model used for kinematic analysis."
+          />
+          <figcaption>Labeled six-bar, three-loop linkage model used for kinematic analysis.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Computational Approach -->
+      <section class="info-block livebolt-block">
+        <h2 class="block-title">Computational Approach (MATLAB Implementation)</h2>
+
+        <p class="principles-intro">
+          The kinematic analysis is implemented entirely in MATLAB without reliance on pre-built
+          mechanism toolboxes. Position analysis is performed using trigonometric relationships derived
+          from loop-closure equations. Angular velocity and angular acceleration are then calculated
+          analytically by differentiating the position equations with respect to time.
+        </p>
+
+        <p class="principles-close">
+          The program is structured to progress logically from input definition to calculation to
+          visualization. Arrays are used to store time-varying values for angular position, velocity,
+          acceleration, and corresponding linear quantities. Modular code sections separate geometry
+          setup, kinematic calculations, plotting routines, and animation logic, improving readability,
+          debugging efficiency, and reusability.
+        </p>
+      </section>
+
+      <!-- Simulation Results -->
+      <section class="info-block livebolt-block">
+        <h2 class="block-title">Simulation &amp; Animation Results</h2>
+
+        <p class="principles-intro">
+          An animated visualization of the six-bar mechanism is generated to demonstrate the continuous
+          motion of the system over a full input rotation cycle. The animation shows the radar structure
+          smoothly transitioning between configurations, validating the correctness of the kinematic
+          relationships and constraints.
+        </p>
+
+        <p class="principles-close">
+          Still frames from the animation highlight key positions throughout the motion cycle. A full video
+          of the simulation is available through the linked demonstration.
+        </p>
+
+        <div class="project-inline-grid">
+          <figure class="project-figure">
+            <!-- Placeholder -->
+            <img
+              src="MATLAB_Animation_Frame_1.JPG"
+              alt="MATLAB-generated animation of the six-bar, three-loop kinematic system during simulated motion. Link positions and joint behavior are computed directly from the numerical kinematic model."
+            />
+            <figcaption>
+              MATLAB-generated animation of the six-bar, three-loop kinematic system during simulated
+              motion. Link positions and joint behavior are computed directly from the numerical kinematic
+              model.
+            </figcaption>
+          </figure>
+
+          <figure class="project-figure">
+            <!-- Placeholder -->
+            <img
+              src="MATLAB_Animation_Frame_2.JPG"
+              alt="MATLAB animation frame illustrating the system configuration at an intermediate time step, showing relative motion between interconnected links."
+            />
+            <figcaption>
+              MATLAB animation frame illustrating the system configuration at an intermediate time step,
+              showing relative motion between interconnected links.
+            </figcaption>
+          </figure>
+        </div>
+
+        <figure class="project-figure wide">
+          <!-- Placeholder -->
+          <img
+            src="MATLAB_Animation_Frame_3.JPG"
+            alt="MATLAB animation frame demonstrating the evolution of the mechanism geometry over time as joint angles are solved numerically."
+          />
+          <figcaption>
+            MATLAB animation frame demonstrating the evolution of the mechanism geometry over time as
+            joint angles are solved numerically.
+          </figcaption>
+        </figure>
+
+        <p class="project-links">
+          <a href="https://youtu.be/C66e0yZY4cI" target="_blank" rel="noopener">
+            YouTube Link to Full Animation
+          </a>
+        </p>
+      </section>
+
+      <!-- Data Viz -->
+      <section class="info-block livebolt-block">
+        <h2 class="block-title">Data Visualization &amp; Output Graphs</h2>
+
+        <p class="principles-intro">
+          In addition to animation, the model produces graphical outputs for angular and linear kinematic
+          quantities. These include plots of angular position, angular velocity, and angular acceleration, as
+          well as linear displacement, velocity, and acceleration of selected points on the mechanism.
+        </p>
+
+        <p class="principles-close">
+          Three-dimensional plots are used where appropriate to visualize how motion variables evolve
+          simultaneously with respect to time and configuration. These visualizations provide insight into
+          dynamic trends, peak accelerations, and regions of rapid motion that may influence mechanical
+          design decisions.
+        </p>
+
+        <div class="project-inline-grid">
+          <figure class="project-figure">
+            <!-- Placeholder -->
+            <img
+              src="Plot_JointAngle_Time_R3.JPG"
+              alt="Joint Angle vs Time vs R3 plot"
+            />
+            <figcaption>
+              <strong>Joint Angle vs Time vs R3</strong><br />
+              This plot shows the time history of joint angles for the six-bar, three-loop mechanism as link
+              length r₃ varies. It illustrates how changes in the input geometry propagate through the system
+              and affect the relative angular positions of each joint.
+            </figcaption>
+          </figure>
+
+          <figure class="project-figure">
+            <!-- Placeholder -->
+            <img
+              src="Plot_JointVel_Time_R3.JPG"
+              alt="Joint Velocities vs Time vs R3 plot"
+            />
+            <figcaption>
+              <strong>Joint Velocities vs Time vs R3</strong><br />
+              This plot presents the angular velocities of each joint over time for the r₃ input case. The results
+              highlight how motion introduced at the input link distributes dynamically across the coupled
+              mechanism.
+            </figcaption>
+          </figure>
+        </div>
+
+        <figure class="project-figure wide">
+          <!-- Placeholder -->
+          <img
+            src="Plot_JointAccel_Time_R3.JPG"
+            alt="Joint Acceleration vs Time vs R3 plot"
+          />
+          <figcaption>
+            <strong>Joint Acceleration vs Time vs R3</strong><br />
+            This plot shows the angular accelerations of the joints as a function of time for the r₃
+            configuration. These results provide insight into dynamic loading and regions of higher inertial
+            demand within the multi-loop system.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Takeaways -->
+      <section class="info-block livebolt-block">
+        <h2 class="block-title">Learning Outcomes &amp; Engineering Takeaways</h2>
+
+        <p class="principles-intro">
+          This project reinforced my understanding of planar kinematics and the relationship between
+          theoretical equations and real mechanical motion. Beyond the mathematics, it strengthened my
+          ability to structure computational code, debug geometric constraints, and present complex motion
+          in a clear and visual format.
+        </p>
+
+        <p class="principles-close">
+          Most importantly, this experience demonstrated how an abstract mechanical concept can be
+          transformed into a complete engineering deliverable — combining mathematical modeling,
+          software implementation, and visual communication. The project deepened my confidence in
+          using MATLAB as an engineering tool and highlighted the value of computational simulation in
+          validating mechanical designs before physical prototyping.
+        </p>
+      </section>
+    </div>
 
     <!-- FOOTER -->
     <footer class="fun-footer">
-      © 2025 Designed and Built by Alex Ayala •
+      © 2026 Designed and Built by Alex Ayala •
       <a href="contact.html">Contact</a> • 😊 Have a great day!
     </footer>
 
