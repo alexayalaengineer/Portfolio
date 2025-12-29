@@ -91,6 +91,50 @@ a {
 }
 
 /* ---------------------------
+   NAV (ONE-LINE ON MOBILE)
+---------------------------- */
+
+/* desktop/default */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* mobile: force one line + allow side-scroll */
+@media (max-width: 700px) {
+  .top-nav-inner {
+    padding: 0 10px; /* tighter on mobile */
+  }
+
+  .nav-links {
+    justify-content: flex-start;      /* looks better than center when scrolling */
+    gap: 14px;                        /* smaller gap so more fits */
+    padding: 12px 4px;
+    flex-wrap: nowrap;                /* ✅ no wrapping */
+    white-space: nowrap;              /* ✅ keep text on one line */
+    overflow-x: auto;                 /* ✅ swipe left/right */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;            /* Firefox hide scrollbar */
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;                    /* Chrome/Safari hide scrollbar */
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;                   /* prevents shrinking weirdly */
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+}
+
+
+
+/* ---------------------------
    HERO (HOME)
    Older hero system. Safe to keep.
 ---------------------------- */
