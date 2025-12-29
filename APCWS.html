@@ -32,8 +32,9 @@
       </div>
     </div>
 
+    <!-- PAGE CONTENT -->
     <div class="page">
-      <!-- PROJECT HEADER -->
+      <!-- HEADER -->
       <section class="section-container project-header-card">
         <a class="project-back-btn" href="projects.html">← Back to Projects</a>
 
@@ -76,12 +77,15 @@
 
       <!-- DEMONSTRATION -->
       <section class="info-block livebolt-block">
-        <h2 class="block-title">Automated Pedestrian Crosswalk Warning System Demonstration</h2>
+        <h2 class="block-title">
+          Automated Pedestrian Crosswalk Warning System Demonstration
+        </h2>
 
         <p class="principles-intro">
           The system was designed around a simple two-state warning concept. A yellow warning light activates when a
-          pedestrian approaches the crosswalk, while a red warning light activates once a pedestrian is actively crossing.
-          This distinction allows drivers to anticipate pedestrian movement rather than reacting at the last moment.
+          pedestrian approaches the crosswalk, while a red warning light activates once a pedestrian is actively
+          crossing. This distinction allows drivers to anticipate pedestrian movement rather than reacting at the
+          last moment.
         </p>
       </section>
 
@@ -114,13 +118,25 @@
 
         <p class="principles-close">
           A functional prototype was constructed using off-the-shelf components, with an emphasis on affordability and
-          feasibility. The total prototype cost was approximately $105, demonstrating that meaningful safety improvements
-          could be achieved without expensive infrastructure changes.
+          feasibility. The total prototype cost was approximately $105, demonstrating that meaningful safety
+          improvements could be achieved without expensive infrastructure changes.
         </p>
 
-        <p class="principles-intro">dsjfkldsj;klfdsjlfksad</p>
+        <figure class="project-figure wide">
+          <img
+            src="SENSOR_CONTROL_BOX.JPG"
+            alt="Sensor Control Box"
+          />
+          <figcaption>Sensor Control Box</figcaption>
+        </figure>
 
-        <p class="principles-intro">jsdklfjadskl;fj;asdkljfkl;dsajf;lksd</p>
+        <figure class="project-figure wide">
+          <img
+            src="SENSOR_CONTROL_BOX_2.JPG"
+            alt="Sensor Control Box"
+          />
+          <figcaption>Sensor Control Box</figcaption>
+        </figure>
       </section>
 
       <!-- TESTING -->
@@ -154,10 +170,25 @@
 
         <p class="principles-intro">
           This project demonstrated the full engineering lifecycle—from problem identification and requirements
-          definition to prototyping, testing, and critical evaluation—while emphasizing practical, low-cost solutions to
-          real-world safety challenges.
+          definition to prototyping, testing, and critical evaluation—while emphasizing practical, low-cost solutions
+          to real-world safety challenges.
         </p>
       </section>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="fun-footer">
+      © 2026 Designed and Built by Alex Ayala •
+      <a href="contact.html">Contact</a> • 😊 Have a great day!
+    </footer>
+
+    <!-- Nav scroll effect -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".top-nav");
+        if (window.scrollY > 10) nav.classList.add("scrolled");
+        else nav.classList.remove("scrolled");
+      });
+    </script>
   </body>
 </html>
