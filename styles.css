@@ -40,13 +40,33 @@ a {
 /* ---------------------------
    NAV (OLD / SIMPLE)
 ---------------------------- */
+/* ---------------------------
+   NAV (STICKY + HIDE ON SCROLL)
+---------------------------- */
 .top-nav {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
+
   background: #1f57a4;
   border-bottom: 1px solid #143b6f;
+
+  /* smooth animations */
+  transition: transform 0.22s ease, background 0.25s ease, backdrop-filter 0.25s ease;
+  will-change: transform;
 }
+
+/* when you are not at the top */
+.top-nav.scrolled {
+  background: rgba(31, 87, 164, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+/* hide when scrolling down */
+.top-nav.hidden {
+  transform: translateY(-110%);
+}
+
 
 .top-nav-inner {
   max-width: 1100px;
@@ -84,11 +104,6 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-.top-nav.scrolled {
-  background: rgba(31, 87, 164, 0.45);
-  backdrop-filter: blur(8px);
-  transition: background 0.25s ease, backdrop-filter 0.25s ease;
-}
 
 /* ---------------------------
    NAV (ONE-LINE ON MOBILE)
