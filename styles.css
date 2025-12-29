@@ -84,6 +84,12 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
+.top-nav.scrolled {
+  background: rgba(31, 87, 164, 0.85);
+  backdrop-filter: blur(8px);
+  transition: background 0.25s ease, backdrop-filter 0.25s ease;
+}
+
 /* ---------------------------
    HERO (HOME)
    Older hero system. Safe to keep.
