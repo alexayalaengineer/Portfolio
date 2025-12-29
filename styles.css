@@ -1772,6 +1772,7 @@ main.page {
 
 .project-title {
   margin-top: 6px;
+  text-align: center;
 }
 
 .project-subtitle {
@@ -1780,6 +1781,8 @@ main.page {
   line-height: 1.7;
   font-size: 1.04rem;
   max-width: 980px;
+  font-style: italic;
+  text-align: center;
 }
 
 .project-meta {
@@ -1788,6 +1791,7 @@ main.page {
   font-size: 0.98rem;
   font-weight: 600;
   letter-spacing: 0.2px;
+  text-align: center;
 }
 
 .project-meta .dot {
