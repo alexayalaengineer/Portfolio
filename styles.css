@@ -2003,15 +2003,179 @@ main.page {
   color: rgba(15, 23, 42, 0.72);
 }
 
-/* Big “back boxes” */
+/* ============================
+   CREDENTIALS PAGE (NEW COLORS)
+============================ */
+
+.credentials-page {
+  padding-top: 34px;
+  padding-bottom: 54px;
+}
+
+/* Page header */
+.credentials-header {
+  margin: 6px 0 18px;
+}
+
+.credentials-title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.credentials-subtitle {
+  margin: 10px 0 0;
+  max-width: 72ch;
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(15, 23, 42, 0.72);
+}
+
+/* Big section boxes (now WHITE) */
 .credentials-section {
-  background: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: 26px;
   padding: 20px;
   margin-top: 18px;
-  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.12);
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.08);
 }
+
+/* Section titles (dark again) */
+.credentials-section-title {
+  margin: 0 0 14px;
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+/* Stack of smaller cards inside each big box */
+.credentials-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Base small card style */
+.cred-card {
+  background: #ffffff; /* default fallback */
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  border-radius: 24px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.cred-card.flip {
+  flex-direction: row-reverse;
+}
+
+/* Image column */
+.cred-media {
+  flex: 0 0 360px;
+  max-width: 360px;
+}
+
+.cred-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  object-fit: cover;
+}
+
+/* Text column */
+.cred-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.cred-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.cred-meta {
+  margin: 10px 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cred-org,
+.cred-date,
+.cred-extra {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.cred-text {
+  margin: 10px 0 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: rgba(15, 23, 42, 0.80);
+}
+
+/* ============================
+   FAINT TINT THEMES (per credential)
+   Add these classes to each .cred-card in HTML
+============================ */
+
+/* MTSU degrees (super light MTSU blue) */
+.cred-card.mtsu {
+  background: rgba(31, 87, 164, 0.08);
+  border-color: rgba(31, 87, 164, 0.18);
+}
+
+/* SOLIDWORKS (super faded red) */
+.cred-card.solidworks {
+  background: rgba(179, 25, 25, 0.07);
+  border-color: rgba(179, 25, 25, 0.18);
+}
+
+/* MATLAB (super faded orange/yellow) */
+.cred-card.matlab {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.18);
+}
+
+/* Excel (super faded green) */
+.cred-card.excel {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.18);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .credentials-title {
+    font-size: 36px;
+  }
+
+  .credentials-section-title {
+    font-size: 28px;
+  }
+
+  .cred-card,
+  .cred-card.flip {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cred-media {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+}
+
 
 /* Title inside big boxes */
 .credentials-section-title {
