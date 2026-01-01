@@ -2181,13 +2181,10 @@ main.page {
 
 /* Title inside big boxes */
 .credentials-section-title {
-  margin: 16px 0;
+  margin: 0 0 10px;
   font-size: 2.5rem;
-  font-weight: 700;
   line-height: 1.15;
   color: #0f172a;
-  letter-spacing: 0;
-  font-family: "Montserrat", sans-serif;
 }
 
 /* Stack of smaller cards inside each big box */
@@ -2235,10 +2232,9 @@ main.page {
 }
 
 .cred-title {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+  font-size: 2rem;
+  color: #000000;
 }
 
 .cred-meta {
