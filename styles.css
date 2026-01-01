@@ -2008,7 +2008,7 @@ main.page {
 ============================ */
 
 .credentials-page {
-  padding-top: 3px;
+  padding-top: 11px;
   padding-bottom: 3px;
 }
 
@@ -2038,7 +2038,7 @@ main.page {
   border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: 26px;
   padding: 20px;
-  margin-top: 18px;
+  margin-top: 10px;
   box-shadow: 0 18px 40px rgba(2, 6, 23, 0.08);
 }
 
