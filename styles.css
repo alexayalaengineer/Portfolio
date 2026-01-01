@@ -2047,8 +2047,9 @@ main.page {
   margin: 0 0 14px;
   color: #0f172a;
   font-size: 32px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 /* Stack of smaller cards inside each big box */
