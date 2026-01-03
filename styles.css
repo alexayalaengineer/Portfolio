@@ -709,8 +709,8 @@ p {
 ============================ */
 /* Bottom resume actions */
 .resume-bottom-actions {
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin-top: 0px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   gap: 28px;
